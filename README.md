@@ -28,6 +28,7 @@ research/
   factors-and-coaches.md           ← מאמנים, כושר-כניסה, הטיית מארחת, שאלת מלך השערים
 predictions/
   matchday-matrix.md               ← קובץ העבודה האונליין: מטריצת ניחושים ל-3 היוזרים
+  matchday-01-research.md          ← חקר מקדים מחזור 1 (16 פותחי הבתים, תחזיות מקדימות)
   group1-boaz.md                   ← תחזיות בועז (קבוצה 1)
   group1-rotem.md                  ← תחזיות רותם (קבוצה 1)
   group2-rotem.md                  ← תחזיות רותם (קבוצה 2)
