@@ -1,6 +1,6 @@
 name: Notify on prediction issue
 
-# כשנפתח issue (תחזית/שינוי) ע"י ה-Routine, הבוט משייך ומתייג את הבעלים.
+# כשנפתח issue (תחזית) ע"י ה-Routine, הבוט מתייג (@mention) את הבעלים.
 # הבוט הוא שחקן אחר מהמשתמש, לכן ההתראה (מייל + פוש) כן נשלחת —
 # בניגוד ל-issue שהמשתמש יוצר בעצמו, שעליו GitHub לא מתריע.
 
@@ -15,21 +15,11 @@ jobs:
   notify-owner:
     runs-on: ubuntu-latest
     steps:
-      - name: Assign and mention owner
+      - name: Mention owner
         uses: actions/github-script@v7
         with:
           script: |
             const owner = 'BumbleBeeDream';
-            try {
-              await github.rest.issues.addAssignees({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                assignees: [owner],
-              });
-            } catch (e) {
-              core.warning(`assign failed: ${e.message}`);
-            }
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
