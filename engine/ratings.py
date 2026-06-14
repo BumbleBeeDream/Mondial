@@ -56,4 +56,4 @@ if __name__ == "__main__":
     print(f"{a.home}: התקפה {a.hatt} / הגנה {a.hdef} · מאמן(איכות {a.hcq}, סגנון {a.hcs})")
     print(f"{a.away}: התקפה {a.aatt} / הגנה {a.adef} · מאמן(איכות {a.acq}, סגנון {a.acs})")
     print(f"→ λ: {a.home} {lh} / {a.away} {la}\n")
-    print(report(lh, la))
+    print(report(lh, la, home=a.home, away=a.away))

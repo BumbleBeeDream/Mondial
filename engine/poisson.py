@@ -63,18 +63,24 @@ def ev(pred, M):
     return sum(p * points(pred, act) for act, p in M.items())
 
 
-def report(lh, la, rho=-0.12):
+def report(lh, la, rho=-0.12, home="בית", away="חוץ"):
     M = matrix(lh, la, rho)
     h, d, a = wdl(M)
-    out = [f"xG: בית {lh} / חוץ {la}  (rho={rho})",
-           f"P(נצחון בית)={h:.1%}  P(תיקו)={d:.1%}  P(נצחון חוץ)={a:.1%}",
-           "התוצאות הסבירות:"]
-    for (i, j), p in sorted(M.items(), key=lambda x: -x[1])[:6]:
-        out.append(f"   {i}-{j}: {p:.1%}")
-    out.append("ניחושים לפי EV (ניקוד 3/2/1/0) — מהטוב:")
     cands = [(i, j) for i in range(6) for j in range(6)]
-    for e, (i, j) in sorted(((ev(c, M), c) for c in cands), reverse=True)[:6]:
-        out.append(f"   {i}-{j}: EV={e:.3f}")
+    best = sorted(((ev(c, M), c) for c in cands), reverse=True)
+    bi, bj = best[0][1]
+    btext = "תיקו" if bi == bj else (home if bi > bj else away)
+    out = [f"xG: בית {lh} / חוץ {la}  (rho={rho})",
+           "",
+           "🎲 הסתברות לתרחיש (3 הדרכים):",
+           f"   נצחון {home}: {h:.0%}  ·  תיקו: {d:.0%}  ·  נצחון {away}: {a:.0%}",
+           "📊 התוצאות הסבירות (אחוז):"]
+    for (i, j), p in sorted(M.items(), key=lambda x: -x[1])[:6]:
+        out.append(f"   {i}-{j}: {p:.0%}")
+    out.append("🎯 EV לפי ניקוד הליגה (3/2/1/0):")
+    for e, (i, j) in best[:5]:
+        out.append(f"   {i}-{j}: EV={e:.2f}")
+    out.append(f"➡️ ניחוש אופטימלי: {bi}-{bj} ({btext}, EV={best[0][0]:.2f}, סיכוי-מדויק {M[(bi,bj)]:.0%})")
     return "\n".join(out)
 
 
