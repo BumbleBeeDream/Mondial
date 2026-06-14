@@ -63,17 +63,29 @@ def ev(pred, M):
     return sum(p * points(pred, act) for act, p in M.items())
 
 
+def round_to_100(fracs):
+    """עיגול קבוצת הסתברויות כך שתמיד תסתכם ל-100 (שיטת השארית הגדולה)."""
+    scaled = [f * 100 for f in fracs]
+    floors = [int(x) for x in scaled]
+    rem = round(sum(scaled)) - sum(floors)
+    order = sorted(range(len(fracs)), key=lambda i: scaled[i] - floors[i], reverse=True)
+    for k in range(int(rem)):
+        floors[order[k % len(floors)]] += 1
+    return floors
+
+
 def report(lh, la, rho=-0.12, home="בית", away="חוץ"):
     M = matrix(lh, la, rho)
     h, d, a = wdl(M)
+    ph, pd, pa = round_to_100([h, d, a])   # מסתכם ל-100 תמיד
     cands = [(i, j) for i in range(6) for j in range(6)]
     best = sorted(((ev(c, M), c) for c in cands), reverse=True)
     bi, bj = best[0][1]
     btext = "תיקו" if bi == bj else (home if bi > bj else away)
     out = [f"xG: בית {lh} / חוץ {la}  (rho={rho})",
            "",
-           "🎲 הסתברות לתרחיש (3 הדרכים):",
-           f"   נצחון {home}: {h:.0%}  ·  תיקו: {d:.0%}  ·  נצחון {away}: {a:.0%}",
+           "🎲 הסתברות לתרחיש (3 הדרכים, סכום=100%):",
+           f"   נצחון {home}: {ph}%  ·  תיקו: {pd}%  ·  נצחון {away}: {pa}%",
            "📊 התוצאות הסבירות (אחוז):"]
     for (i, j), p in sorted(M.items(), key=lambda x: -x[1])[:6]:
         out.append(f"   {i}-{j}: {p:.0%}")
