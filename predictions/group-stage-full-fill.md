@@ -16,4 +16,4 @@ K: POR-COD 2-0 · UZB-COL 0-2 · POR-UZB 3-0 · COL-COD 2-0 · COL-POR 1-2 · CO
 L: ENG-CRO 1-0 · GHA-PAN 1-0 · ENG-GHA 2-0 · PAN-CRO 0-2 · PAN-ENG 0-2 · CRO-GHA 2-0
 
 Best 3rds (4 נק'): CZE, SCO, PAR, CIV, SWE, IRN, NOR, ALG. שלישיות לא-עולות (3 נק'): QAT, KSA, COD, GHA.
-Step 2: החזקה עוברת; צרפת+ספרד בגמר בכל 3 הכניסות; בועז→צרפת אלופה, רותם×2→ספרד.
+Step 2: החזקה עוברת; צרפת+ספרד בגמר (כניסה יחידה); בועז → 🇫🇷 צרפת אלופה (בידול).
