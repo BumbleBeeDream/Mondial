@@ -74,6 +74,16 @@ def round_to_100(fracs):
     return floors
 
 
+def joker_pick(M, fav_is_home):
+    """🃏 הימור-הפתעה: הסקור הכי טוב (EV) מבין התרחישים שאינם נצחון-הפייבוריט
+    (תיקו או נצחון האנדרדוג). כלי בידול ל-pool — לא ה-EV הגבוה ביותר, אלא ה'הפתעה' הסבירה ביותר."""
+    cands = [(i, j) for i in range(6) for j in range(6)]
+    def is_surprise(i, j):
+        return (i <= j) if fav_is_home else (i >= j)   # תיקו או נצחון אנדרדוג
+    surp = [(ev(c, M), c) for c in cands if is_surprise(*c)]
+    return max(surp)
+
+
 def report(lh, la, rho=-0.12, home="בית", away="חוץ"):
     M = matrix(lh, la, rho)
     h, d, a = wdl(M)
@@ -92,7 +102,12 @@ def report(lh, la, rho=-0.12, home="בית", away="חוץ"):
     out.append("🎯 EV לפי ניקוד הליגה (3/2/1/0):")
     for e, (i, j) in best[:5]:
         out.append(f"   {i}-{j}: EV={e:.2f}")
-    out.append(f"➡️ ניחוש אופטימלי: {bi}-{bj} ({btext}, EV={best[0][0]:.2f}, סיכוי-מדויק {M[(bi,bj)]:.0%})")
+    out.append(f"➡️ ניחוש אופטימלי (EV): {bi}-{bj} ({btext}, EV={best[0][0]:.2f}, סיכוי-מדויק {M[(bi,bj)]:.0%})")
+    # 🃏 ג'וקר — הימור-הפתעה
+    je, (ji, jj) = joker_pick(M, h >= a)
+    jtext = "תיקו" if ji == jj else (home if ji > jj else away)
+    psurp = (d + a) if h >= a else (d + h)   # הסתברות שההפתעה תקרה
+    out.append(f"🃏 ג'וקר (הפתעה): {ji}-{jj} ({jtext}) · EV={je:.2f} · סיכוי-הפתעה {psurp:.0%}")
     return "\n".join(out)
 
 
