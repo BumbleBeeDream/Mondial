@@ -1,3 +1,4 @@
 # צרפת — bottom-up בסיס (16.6) · FIFA #3 · סגל הכי יקר בטורניר (~€1.5B)
 GK Maignan(€25M) | DEF Saliba(€80M)/Upamecano(€60M)/Koundé(€60M)/Konaté(€55M)/T.Hernandez(€40M) | MID Tchouaméni(€80M)/M.Koné(€45M)/Zaïre-Emery(€60M)/Rabiot | ATT Mbappé(€160M)/Dembélé(€100M, כדור-זהב)/Olise(€90M)/Doué(€90M)/Thuram(€60M)
-קווים: GK84 DEF88 MID82 ATT94 → **התקפה 93 · הגנה 87**. מאמן Deschamps (cq1.08, cs-0.1 פרגמטי). Mbappé כשיר (אולי load-management).
+קווים: GK84 DEF88 MID82 ATT94 → **התקפה 92 · הגנה 87**. מאמן Deschamps (cq1.08, cs-0.1 פרגמטי, מונדיאל אחרון שלו). Mbappé החלים משריר/קרסול — כשיר. Saliba כשיר. Dembélé חזר. Camavinga + Kolo Muani + Ekitike + Kamara בחוץ.
+UPDATE 15.6.26: הפסד 1-2 לחוף השנהב (4.6, ידידות, הרכב מסובב — Cherki שער, Doué/Amad לחוף). נצחונות מוקדמות חזקים (Ukraine 4-0, Azerbaijan 3-1 נוב'25). EA FC26: כללי 86 / att87 def85. FIFA #2-3. הרכב צפוי 4-2-3-1: Maignan; Koundé, Saliba, Upamecano, T.Hernandez; Tchouaméni, Rabiot; Olise, Doué, Mbappé; Dembélé.

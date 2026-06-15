@@ -1,3 +1,4 @@
-# מצרים — bottom-up בסיס (15.6) · FIFA #29
-GK El Shenawy | DEF (כולם מקומיים, מאורגן אך מוגבל) | MID Ashour/Zizo/Attia | ATT Salah(€46M, חוזר משריר)/Marmoush(€79M)/Trezeguet
-קווים: GK48 DEF45 MID47 ATT66(צמד עילית, דק מאחור) → **התקפה 64 · הגנה 46**. מאמן H.Hassan (cq0.97, cs-0.4). ⚠️ סלאח כושר.
+# מצרים — bottom-up בסיס (15.6 · רענון WC2026) · FIFA #29
+GK Shobeir/El Shenawy | DEF (כולם מקומיים, מאורגן אך מוגבל) | MID Ashour/Ateya/Lasheen | ATT Salah(€46M, ✅כשיר — שיחק 45דק' מול ברזיל 6.6)/Marmoush(€79M)/Trezeguet
+כושר: הפסד 1-2 לברזיל (ידידות), 1-0 רוסיה; AFCON מעורב (0-0 ניגריה, 0-1 סנגל). מאמן Hossam Hassan (מונה 2/2024, פרגמטי/מאורגן/קומפקטי, cq0.97, cs-0.4).
+קווים: GK50 DEF46 MID48 ATT66(צמד עילית סלאח+מרמוש, דק מאחור) → **התקפה 65 · הגנה 47**. סלאח כשיר אך לא 100%.

@@ -1,4 +1,5 @@
 # ערב הסעודית — bottom-up בסיס (15.6) · FIFA #60 · ~€41M
-⚠️ רנארד פוטר 4/2026 → **Donis חדש (~7 שבועות)** = אי-יציבות.
-GK Al-Owais | DEF Al-Tambakti/Lajami/Abdulhamid(Lens) | MID Kanno/Al-Juwayr | ATT S.Al-Dawsari(קפטן)/Al-Brikan. 25/26 מהליגה הסעודית.
-קווים: GK42 DEF40 MID41 ATT43 → **התקפה 42 · הגנה 40**. מאמן Donis (cq0.93 חדש, cs0.0).
+⚠️ רנארד פוטר 4/2026 → **Georgios Donis** (אושר; ~7-8 שבועות בתפקיד) = אי-יציבות.
+GK Al-Owais | DEF Abdulhamid(Lens)/Al-Tambakti/Lajami/Boushal | MID Kanno/Al-Khaibari/Al-Juwayr | ATT S.Al-Dawsari(קפטן,34 גולים)/Al-Buraikan. כמעט כולם מהליגה הסעודית.
+חסר: Nawaf Al-Aqidi (שריר). פורמה אחרונה גרועה: 0-0 סנגל, 4-0 הפסד למצרים, 2-1 הפסד לסרביה, 3-0 פוארטו ריקו, ניצחון על פלסטין.
+קווים: GK42 DEF40 MID41 ATT42 → **התקפה 41 · הגנה 39**. מאמן Donis (חדש, סגנון הגנתי-משמעתי, cs0.0).

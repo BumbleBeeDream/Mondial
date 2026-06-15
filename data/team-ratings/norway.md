@@ -1,3 +1,8 @@
-# נורווגיה — bottom-up בסיס (16.6) · FIFA #31 · סגל ~€590M
-GK Nyland | DEF Østigård(€12M)/Ajer(€18M)/Ryerson(€20M) | MID **Ødegaard בחוץ! (רצועות ברך)**/Berge(€25M)/P.Berg | ATT **Haaland(€180-200M)**/Sørloth(€35M)/Nusa(€45M)/Bobb(€30M)
-קווים: GK50 DEF60 MID58(ירד בלי אדגור) ATT82 → **התקפה 78 · הגנה 56**. מאמן Solbakken (cq1.0, cs+0.4). ⚠️ אדגור בחוץ.
+# נורווגיה — refreshed 15.6.2026 · FIFA ~#31 · סגל ~€590M
+Formation 4-3-3. GK Nyland | DEF Ryerson / Ajer / Heggem(Østigård) / RB | MID Berge / **Ødegaard(C)** / Aursnes | ATT Nusa — **Haaland** — Sørloth
+First WC since 1998. Group I with France, Senegal, Iraq.
+⚠️ UPDATE: Ødegaard FIT — cleared concerns ("I feel good"), Solbakken confirms Ødegaard & Haaland both fit; expected to start. (Base file's "Ødegaard out" is OUTDATED.)
+Haaland: all-time top scorer 55 intl goals, 16 in qualifying, sharp in training.
+Coach: Ståle Solbakken (since 2020). Attacking, front-foot, built around Haaland/Ødegaard.
+Form: L1-2 Netherlands; D1-1 Morocco; W3-1 Sweden; D0-0 Switzerland; W4-1 Italy (WC qual). 9 scored / 5 conceded last 5.
+קווים: GK50 DEF58 MID62 (Ødegaard back) ATT82 → **התקפה 79 · הגנה 57**.
