@@ -4,22 +4,24 @@
 > `data/team-ratings/`, (2) λ דרך `engine/ratings.py` → `poisson.py`, (3) ראשי + 🃏 ג'וקר, (4) רענון ביום המשחק.
 > בועז (כניסה יחידה). ברקט נעול: 🇫🇷 צרפת אלופה.
 
-## סוכני שלב הבתים (10, רצים ברקע)
-| סוכן | בתים | מסמכי דירוג לבנות | משחקים | קובץ | סטטוס |
-|------|------|------|:--:|------|------|
-| A | A | mexico, south-korea, south-africa, czechia | MD2+MD3 (4) | group-A.md | ⏳ |
-| B | B | canada, switzerland, qatar, bosnia | MD2+MD3 (4) | group-B.md | ⏳ |
-| C | C | brazil, morocco | MD2+MD3 (4) | group-C.md | ⏳ |
-| D | D | usa, paraguay | MD2+MD3 (4) | group-D.md | ⏳ |
-| E | E | germany, curacao | MD2+MD3 (4) | group-E.md | ⏳ |
-| F | F | netherlands, sweden, tunisia, japan | MD2+MD3 (4) | group-F.md | ⏳ |
-| GH | G+H | — (קיימים) | MD2+MD3 (8) | group-GH.md | ⏳ |
-| IJ | I+J | — (קיימים) | MD2+MD3 (8) | group-IJ.md | ⏳ |
-| K | K (בית המוות) | portugal, congo, uzbekistan, colombia | **MD1(17.6)**+MD2+MD3 (6) | group-K.md | ⏳ |
-| L | L | england, croatia, ghana, panama | **MD1(17.6)**+MD2+MD3 (6) | group-L.md | ⏳ |
+## סוכני שלב הבתים (10) — ✅ הושלמו
+| סוכן | בתים | קובץ | סטטוס |
+|------|------|------|------|
+| A | A | group-A.md | ✅ |
+| B | B | group-B.md | ✅ |
+| C | C | group-C.md | ✅ |
+| D | D | group-D.md | ✅ |
+| E | E | group-E.md | ✅ |
+| F | F | group-F.md | ✅ |
+| GH | G+H | group-GH.md | ✅ |
+| IJ | I+J | group-IJ.md | ✅ |
+| K | K (בית המוות) | group-K.md | ✅ |
+| L | L | group-L.md | ✅ |
 
-## אחרי הבתים
-- **סוכן נוקאאוט (KO):** R32→גמר לפי הברקט הנעול + מנצחי-בתים מוקרנים מהדיגסטים. יושק כשהבתים יסתיימו.
+**48/48 דירוגי קבוצה נבנו** (bottom-up). **טבלה מאוחדת כרונולוגית: `_MASTER-LOCK.md`.**
+
+## נוקאאוט
+- **סוכן נוקאאוט (KO):** 🔄 רץ — R32→גמר, מפגשים מוקרנים + ברקט נעול (צרפת) → `knockout-bracket.md`.
 
 ## רענון ביום המשחק (לפי player-rating-system.md)
 - **בסיס:** המסמכים שנבנים עכשיו (חד-פעמי).
