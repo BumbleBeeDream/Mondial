@@ -1,0 +1,6 @@
+# יפן — bottom-up בסיס (16.6) · FIFA #18 · Elo ~1879 · S3 (חזקה)
+GK Z.Suzuki(Parma, €24M, EA75) | DEF H.Ito(Bayern, €18M, EA78)/Watanabe(Feyenoord, €9M, EA75)/Taniguchi(STVV, €0.8M, EA70, גיל34) · עומק Tomiyasu(€5M, EA77)/Itakura(€8M, EA76) | MID Sano(Mainz, €30M, EA79)/Kamada(C.Palace, €10M, EA77) · עומק A.Tanaka(€13M, EA76) | ATT Kubo(R.Sociedad, €33M, EA82)/Doan(Frankfurt, €17M, EA82)/Maeda(Celtic, €13M, EA79)/K.Nakamura(Reims, €10M, EA76)/Ueda(Feyenoord, €17M, EA78)
+פורמציה 3-4-2-1 (גמיש לבק-4). קווים: GK75 DEF74 MID77 ATT79 → **התקפה 78 · הגנה 75**. מאמן Moriyasu (cq1.03, cs+0.2 התקפי-פרגמטי, מונה 7.2018, מאוד מבוסס + מתאים-משחק).
+נעדרים: **Endo (קפטן, רגל — OUT)** → Sano מחליף בעוגן (שדרוג איכותי, קנס קטן); **Mitoma (ירך — OUT)** — כנף שמאל ראשונה, מכוסה ע"י Nakamura/Maeda (ירידה); Minamino (ACL — OUT).
+
+UPDATE 16.6.26 (MD1): **יפן 2–2 הולנד (14.6, Dallas) — תוצאה חזקה, חזרה פעמיים מפיגור מול טופ-5.** K.Nakamura השווה 1–2 (57', בישול Kubo), Kamada השווה 89' דרמטי. Moriyasu זכה לשבחים על שינויים טקטיים (קלף Maeda + מעבר לבק-4 שייצר את ההשוואה). חדה במעברים, קומפקטית בבלוק, מסוכנת בקאונטר. סיגנל: יפן מתפקדת מול קבוצות גדולות שמנסות לפרק אותה.

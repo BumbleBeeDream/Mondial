@@ -1,0 +1,7 @@
+# ד.אפריקה (Bafana) — bottom-up בסיס (16.6) · FIFA #60 (החלשה בבית) · הפסידה MD1 (0-2 למקסיקו) · 0 נק'
+GK **Ronwen Williams(c)(€0.8M, OVR76 — השוער, הכי טוב בסגל)** | DEF Aubrey Modiba(€1.8M)/Nkosinathi Sibisi(€1.6M)/**Mbekezeli Mbokazi(20, €0.7M — MOTM ב-MD1)**/Ime Okon(21)/Khuliso Mudau(€0.5M) | MID Teboho Mokoena(€2.8M, OVR72)/Jayden Adams(€1.4M)/Sphephelo Sithole(€2M) | ATT **Lyle Foster(€8M, OVR72-73 — הכי יקר)/Iqraam Rayners(€3M)**
+פורמציה MD1: 5-3-2 (Broos שם בלוק עמוק לגובה — בוקר על שמרנות). קווים: GK74 DEF66 MID67 ATT70 → **התקפה 69 · הגנה 69**. מאמן Hugo Broos (cq1.0, cs-0.3 פרגמטי/לא-לספוג, מונה 5.2021 — הכי ותיק בתולדות באפנה, אלוף אפריקה 2017, גמר AFCON 2026; הזקן בתולדות מונדיאל 74). עומק: Percy Tau(€3.5M, RW), Oswin Appollis(€2.5M, LW — 6 G/A במוקדמות, ירד באופן מפתיע ב-MD1), Makgopa(€2M), Themba Zwane(36, AM).
+🔴 **השעיות ל-MD2 (vs צ'כיה): Sithole (אדום תחילת מחצית) + Zwane (אדום VAR 84')** — באפנה סיימו MD1 ב-9 שחקנים. → ל-MD2: מילוי קישור (Mokoena נשאר + body נוסף) + **Tau/Appollis חוזרים להתקפה** (אטלנטה ללא גובה → Broos עשוי לפתוח את ההתקפה). ל-MD3 שניהם חוזרים.
+פרשת Mokoena (ניכוי 3 נק' מוקדמות, אי-זכאות מול לסוטו) **נסגרה** — אזהרה בלבד, זמין לחלוטין, פתח MD1.
+
+UPDATE 16.6.26: **MD1 הפסד 0-2 למקסיקו** (אצטקה, גובה) — החזיקו 0-1 למחצית, קרסו אחרי האדום של Sithole; **3 אדומים במשחק (שיא בפתיחת מונדיאל)**. רק Williams (6.7) ו-Mbokazi (20, MOTM ~7.0) זרחו. סגל זול (ממוצע ~67/100), שתי איכויות בלבד (Williams, Foster). הגיעה לגמר AFCON 2026 (הפסד 1-2 לקמרון) → יבשתית חזקה אך נחותה בבית A.

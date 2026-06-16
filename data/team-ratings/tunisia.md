@@ -1,0 +1,7 @@
+# תוניסיה — bottom-up בסיס (16.6) · FIFA #45 · S4/S5 גבולית · במשבר עמוק
+GK Dahmen/Ben Said(ספסל MD1) · Chamakh(C.Africain, €0.45M, גיל24 — פתח MD1, אסון) | DEF Valery(Young Boys, €0.8M, EA~70)/Rekik(חופשי, €0.5M, EA~62)/Talbi(Lorient, €7M, EA73)/Abdi(Nice, €2M, EA~71) | MID Skhiri(c, Frankfurt, €5M, EA80)/Khedira(Union Berlin, €2M, EA74)/Ben Slimane(Norwich, €4M, EA70) · עומק Laïdouni(€2M, EA76) | ATT Mejbri(Burnley, €15M, EA74, חזר מירך)/Saad(Augsburg, €3.5M, EA72)/Achouri(€3M, EA72) · ותיק Msakni(€0.4M, גיל35)
+פורמציה 4-2-3-1. קווים: GK66 DEF69 MID75 ATT70 → **התקפה 70 · הגנה 69**. סגל דל-ערך (רוב €0.5-5M); מעט עומק.
+מאמן: **Lamouchi פוטר 15.6 (יום אחרי 1–5)** → **Kebaier interim** (cq0.92, cs−0.3 הגנתי, מונה זה-עתה — אי-יציבות, הורד ביטחון). צפוי להחזיר שוער ותיק (Dahmen) ולהדק.
+נעדרים: **Ben Romdhane לא בסגל** (מבקיע-העל של המוקדמות — הפתעה גדולה), חולשת התקפה. Mejbri נכנס קצר-קצב.
+
+UPDATE 16.6.26 (MD1): **תוניסיה התרסקה 1–5 לשוודיה (Monterrey) — קריסה הגנתית מיוללת-עצמית.** טעות שוער Chamakh (7') → שער; 3 טעויות הובילו ישירות לשערים; Chamakh -2.99 goals-prevented. Rekik (בלם) הבקיע את שער הניחומים (43'). התקפה חסרת שיניים (2 בעיטות למסגרת מ-6, 0 הזדמנויות-גדולות). הבלוק-הנמוך שעבורו מונה Lamouchi מעולם לא קם → פוטר תוך 24ש'. בתחתית בית F, חייבת תוצאות מול יפן + הולנד תחת מאמן חדש.
