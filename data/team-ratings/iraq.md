@@ -5,3 +5,5 @@ Coach: Graham Arnold (appointed May 2025, ex-Australia). Pragmatic/transition, c
 Form: 3-2 agg over UAE playoff (W2-1, D1-1); W1-0 Jordan; L2-1 Palestine; D2-2 Kuwait; W1-0 Andorra friendly. Inconsistent.
 Absences: Jussef Nasrawe cut (fringe). Jalal Hassan back from injury.
 קווים: GK42 DEF38 MID40 ATT41 → **התקפה 40 · הגנה 39** (unchanged; modest WC debutant).
+
+UPDATE 16.6.26 (לפני בית I): החזיקה ספרד 1-1 (4.6) — בלוק נמוך עובד. הרכב כצפוי. λ מול נורווגיה 0.92.
