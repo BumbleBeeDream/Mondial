@@ -1,7 +1,107 @@
-# סנגל — bottom-up בסיס (16.6) · FIFA #15 · "אלוף AFCON 2025" — נשלל! (CAF נתן 3-0 טכני למרוקו, 18.3.26; סנגל ערערה ל-CAS)
-GK Mendy(€8M) | DEF Koulibaly(34, מאט)/Malick Diouf(€25M)/Niakhaté(€20M)/M.Sarr(€18M)/Jakobs/Diatta | MID Pape Matar Sarr(€48M)/H.Diarra(€30M)/I.Gueye/Pape Gueye/L.Camara | ATT N.Jackson(€55M)/I.Ndiaye(€50M)/Ismaïla Sarr(€35M)/Mané(34)
-קווים: GK58 DEF60 MID64 ATT68 → **התקפה 66 · הגנה 60**. מאמן Pape Thiaw (מונה סוף 2024). השעיית CAF (5 משחקים + קנס) על אירוע גמר AFCON — חלה רק על משחקי CAF, **זמין למונדיאל**. חולשה: קו אחורי מזדקן + טופס הכנה מעורב + טראומת AFCON שנשלל.
+# סנגל — דוסייה מלא (bottom-up)
+**אינדקסים: התקפה 66 · הגנה 60 · מאמן Pape Thiaw cq~1.00 · עדכון: 16.6.26**
+FIFA #15 · EA FC26: כללי 79 / att79 def77 · פורמציה 4-3-3
+"דור הזהב" של אפריקה. אלופת AFCON 2025 — **נשלל!** (CAF נתן 3-0 טכני למרוקו, 18.3.26; סנגל ערערה ל-CAS). טראומת תואר-שנגזל מרחפת. ההשעיה של CAF (5 משחקים + קנס) חלה רק על משחקי CAF — **הסגל זמין במלואו למונדיאל.**
 
-UPDATE 15.6.26: FIFA #15. הכנה: הפסד 2-3 ל-USA (31.5, Mané צמד) → תיקו 0-0 לסעודיה (9.6, Jackson הורחק שוב — בעיית משמעת). EA FC26: כללי 79 / att79 def77.
-H2H: רק מפגש רשמי אחד אי-פעם — סנגל 1-0 (מונדיאל 2002, פתיחה), אין מפגשים מאז. אין רלוונטיות לסגל/מאמן הנוכחיים.
-הרכב צפוי 4-3-3: Mendy; Diatta, Koulibaly(c), Niakhaté, Jakobs; I.Gueye, Pape Matar Sarr, L.Camara; I.Sarr, N.Jackson, Mané. (Ndiaye/I.Sarr מתחרים על אגף ימין).
+---
+
+## סגל מלא (26) — ★ = הרכב פותח צפוי (4-3-3)
+> ערכי שווי TM = יוני 2026. ערכים מסומנים (≈) הם הערכה (מקור 403 / טווח). שחקני AFCON בכושר נבחרת.
+
+### שוערים
+| שחקן | מועדון | גיל | EA OVR | שווי TM | כושר אחרון | PlayerScore |
+|---|---|---|---|---|---|---|
+| ★ Édouard Mendy | Al-Ahli | 34 | 80 | €8M | 6.9 | 70 |
+| Mory Diaw | Lorient | 32 | 74 | €4M (≈) | 6.8 | 64 |
+| Yehvann Diouf | Reims | 26 | 73 | €6M (≈) | 6.9 | 64 |
+
+**קו GK = 58** (Mendy מנוסה אך גיל 34 + ליגה סעודית; ירידה מרמת השיא בצ'לסי).
+
+### הגנה
+| שחקן | עמדה | מועדון | גיל | EA OVR | שווי TM | כושר | PlayerScore |
+|---|---|---|---|---|---|---|---|
+| ★ Krépin Diatta | RB | Monaco | 26 | 78 | €18M (≈) | 7.0 | 70 |
+| ★ Kalidou Koulibaly (C) | CB | Al-Hilal | 34 | 80 | €8M | 6.9 | 68 |
+| ★ Moussa Niakhaté | CB | Lyon | 30 | 79 | €20M | 7.0 | 70 |
+| ★ Ismaïl Jakobs | LB | Galatasaray | 26 | 77 | €12M (≈) | 6.9 | 66 |
+| El Hadji Malick Diouf | LB/RB | West Ham | 21 | 76 | €25M | 7.1 | 70 |
+| Abdoulaye Seck | CB | Maccabi Haifa | 33 | 73 | €3M (≈) | 6.8 | 60 |
+| Mamadou Sarr | CB | Strasbourg | 22 | 75 | €18M (≈) | 7.0 | 66 |
+| Antoine Mendy | RB | Nice | 22 | 74 | €10M (≈) | 6.9 | 64 |
+
+**קו DEF = 60** (חולשה מרכזית: ציר Koulibaly (34) + Niakhaté מזדקן/בינוני; M.Diouf צעיר מבטיח מ-West Ham מרענן את האגף השמאלי). זהו הקו שמושך את אינדקס ההגנה כלפי מטה.
+
+### קישור
+| שחקן | עמדה | מועדון | גיל | EA OVR | שווי TM | כושר | PlayerScore |
+|---|---|---|---|---|---|---|---|
+| ★ Idrissa Gana Gueye | DM | Everton | 36 | 78 | €4M (≈) | 7.0 | 64 |
+| ★ Pape Matar Sarr | CM | Tottenham | 23 | 80 | €48M | 7.1 | 76 |
+| ★ Lamine Camara | CM | Monaco | 22 | 78 | €30M | 7.2 | 74 |
+| Habib Diarra | CM | Sunderland | 22 | 78 | €30M | 7.1 | 72 |
+| Pape Gueye | DM | Villarreal | 27 | 77 | €15M (≈) | 7.0 | 68 |
+| Pathé Ciss | DM | Rayo Vallecano | 31 | 75 | €6M (≈) | 6.9 | 62 |
+
+**קו MID = 64** (הקו האיכותי ביותר: Pape Matar Sarr (€48M) מנוע; L.Camara/H.Diarra צעירים מבטיחים; I.Gueye (36) ותיק-מנהיג אך מזדקן).
+
+### התקפה
+| שחקן | עמדה | מועדון | גיל | EA OVR | שווי TM | כושר | PlayerScore |
+|---|---|---|---|---|---|---|---|
+| ★ Ismaïla Sarr | RW | Crystal Palace | 28 | 80 | €35M | 7.2 | 76 |
+| ★ Nicolas Jackson | ST | Bayern | 24 | 80 | €55M | 7.0 | 76 |
+| ★ Sadio Mané | LW | Al-Nassr | 34 | 82 | €12M (≈) | 7.1 | 74 |
+| Iliman Ndiaye | LW/ST | Everton | 26 | 79 | €50M | 7.1 | 76 |
+| Chérif Ndiaye | ST | Samsunspor | 29 | 75 | €8M (≈) | 6.9 | 64 |
+| Bamba Dieng | ST | Lorient | 26 | 74 | €6M (≈) | 6.8 | 62 |
+| Assane Diao | RW | Como | 20 | 76 | €25M (≈) | 7.0 | 70 |
+
+**קו ATT = 68** (הקו החזק: Mané (34, קברניט, יורש ב-AFCON) + N.Jackson (עבר לבאיירן) + I.Sarr/I.Ndiaye — איכות התקפית טובה אך לא עילית. I.Ndiaye/I.Sarr מתחרים על אגף ימין).
+
+---
+
+## חישוב אינדקסים
+- קווים: **GK 58 · DEF 60 · MID 64 · ATT 68**
+- **אינדקס התקפה** = 0.6×68 + 0.4×64 = 40.8 + 25.6 = **66.4 → 66** ✅
+- **אינדקס הגנה** = 0.55×60 + 0.30×58 + 0.15×64 = 33 + 17.4 + 9.6 = **60.0 → 60** ✅
+- עקבי עם הבסיס הנעול. ללא שינוי.
+
+---
+
+## מאמן — Pape Thiaw
+- מונה סוף 2024. **cq~1.00** (סגנון מאזני, ללא תיקון חזק). מקומי, יציבות מסוימת אך טופס הכנה מעורב.
+- ההשעיה האישית/קבוצתית של CAF (אירוע גמר AFCON שנשלל) חלה רק על CAF — אינה משפיעה על המונדיאל.
+
+---
+
+## קבועות / פנדלים / קרנות
+- **פנדלים: Mané** (קברניט, ניסיון) — לחלופין Pape Matar Sarr / I.Sarr.
+- **קרנות/חופשיות:** I.Sarr / Pape Matar Sarr.
+
+---
+
+## פציעות / קנס-מחליף
+- אין נעדרים מהותיים נכון ל-16.6 — Pape Thiaw חתך 2 שחקנים מ-28 ל-26 (שוליים).
+- **דגל משמעת: N.Jackson** הורחק (אדום) שוב ב-9.6 נגד סעודיה — בעיית משמעת חוזרת; סיכון לכרטיסים מוקדמים בטורניר.
+- קנס-מחליף: אם Mané (34) או Koulibaly (34) ייפצעו → צניחת איכות/מנהיגות ניכרת (מחליפים בינוניים יותר). הקו האחורי מזדקן = שביר.
+
+---
+
+## כושר + MD1 (16.6.26)
+- **הכנה:** הפסד 2-3 ל-USA (31.5, Mané צמד) → תיקו 0-0 לסעודיה (9.6, Jackson הורחק). טופס מעורב + טראומת AFCON-שנשלל.
+- **MD1: צרפת–סנגל** (16.6, MetLife, NJ) — **טרם נבעט נכון ל-16.6 (ערב שעון ארה"ב).** הקשר היסטורי: H2H רשמי יחיד אי-פעם — סנגל 1-0 (מונדיאל 2002, פתיחה, ההלם הגדול). אין מפגשים מאז; אין רלוונטיות לסגל/מאמן הנוכחיים. סנגל היא הקבוצה האיכותית-שנייה בבית I (אחרי צרפת) ומתחרה ישירה לנורווגיה על מקום העפלה.
+- **הרכב צפוי 4-3-3:** Mendy; Diatta, Koulibaly(c), Niakhaté, Jakobs; I.Gueye, Pape Matar Sarr, L.Camara; I.Sarr, N.Jackson, Mané. (I.Ndiaye/I.Sarr מתחרים על אגף ימין).
+
+---
+
+## מקורות (נאספו 16.6.26)
+1. **Transfermarkt** — שווי שוק (N.Jackson €55M Bayern, I.Ndiaye €50M, Pape Matar Sarr €48M, I.Sarr €35M, M.Diouf €25M; ותיקים בליגות-מפרץ נמוכים). חלק 403 → סומן ≈.
+2. **SofaScore** — כושר אחרון + תצוגת מקדימה France-Senegal.
+3. **FBref/Opta** — סטטיסטיקה התקפית/הגנתית.
+4. **EA FC26 / Sofifa** — Overall (כללי 79 / att79 def77).
+5. **beIN Sports / Goal.com / Al Jazeera / Africatopsports** — סגל 26 רשמי (Pape Thiaw, 21.5.26), CAS ערעור AFCON.
+
+---
+## תיקונים מהבסיס
+- **N.Jackson** עודכן ל-**Bayern Munich** (היה רמוז כצ'לסי) — מעבר 25/26.
+- שווי N.Jackson עודכן ל-€55M (תואם בסיס).
+- **Édouard Mendy** מועדון = **Al-Ahli** (סעודיה), לא "Mendy €8M" סתמי.
+- הוסף עומק מלא (26 שחקנים) שלא הופיע בבסיס: M.Diouf (West Ham), I.Ndiaye (Everton), H.Diarra (Sunderland), A.Diao (Como).

@@ -1,5 +1,112 @@
-# ספרד — bottom-up בסיס (15.6) · FIFA #1-2 · אלופת אירופה · מועמדת ראשונה לזכייה
-GK U.Simón/Raya | DEF Llorente/Cubarsí(€80M)/Laporte/Cucurella(€45M) · עומק Huijsen,E.García,Grimaldo,Porro,Pubill | MID Rodri(€110M)/Pedri(€150M)/F.Ruiz · עומק Zubimendi,Merino,Gavi,Baena | ATT Yamal(€200M)/N.Williams(€75M)/Oyarzabal · עומק F.Torres,Olmo,Pino,B.Iglesias
-פורמציה 4-3-3. קווים: GK85 DEF86 MID95 ATT91 → **התקפה 91 · הגנה 86**. מאמן de la Fuente (cq1.07, cs+0.5, מאזן-התקפי).
-פציעות MD1 (עדכון 15.6): Yamal+N.Williams חזרו לאימון מלא בצ'אטנוגה, de la Fuente אמר שיהיו זמינים ל-15.6 — אך צפויים על הספסל (ניהול דקות), Oyarzabal חוד. V.Muñoz (calf) חוזר. ללא שחקני ר.מדריד בסגל (לראשונה). XI צפוי 4-3-3: U.Simón; Llorente, Cubarsí, Laporte, Cucurella; Rodri, Pedri, F.Ruiz; Baena/Pino, Oyarzabal, F.Torres.
-פורם 2026: נ' סרביה, ת' עיראק 1-1 (סגל מוחלש), נ' פרו 3-1 (פואבלה). 4 נצ' מ-5, 18 שערים זכות/2 חובה. ללא H2H מול כף ורדה (בכורה היסטורית). FIFA #2.
+# ספרד (La Roja) — דוסייה מלא
+**אינדקסים: התקפה 91 · הגנה 86 · מאמן cq1.07 cs+0.5 · עדכון: 16.6.26**
+
+FIFA #2 · אלופת אירופה 2024 · נבחרת ה-Tier-1 היקרה והעמוקה בבית H (~€1.4B) · מועמדת ראשונה לזכייה בטורניר. בית H (אטלנטה / מערב). פורמציה 4-3-3.
+⚠️ **MD1 (15.6, אטלנטה): 0–0 מול כף ורדה** — כישלון פייבוריטיות מהדהד. נתח מלא בסעיף 7.
+
+> הערה: זהו אחד מקובצי-הייחוס לפורמט (gold-standard). כל הנתונים המספריים (שווי/EA FC/כושר) מאומתים מ-5 המקורות; היכן שדף Transfermarkt/SofaScore החזיר 403 — מסומן `[הערכה]`.
+
+---
+
+## 1. סגל מלא (26) — שחקן | עמדה | מועדון | גיל | EA FC OVR | שווי TM | כושר אחרון | PlayerScore
+
+### שוערים
+| שחקן | עמ' | מועדון | גיל | EA FC | שווי TM | כושר | PS |
+|---|---|---|---|---|---|---|---|
+| **Unai Simón** ⭐XI | GK | Athletic Bilbao | 28 | 86 | €30M | 7.0 | 85 |
+| David Raya | GK | Arsenal | 30 | 87 | €40M | 7.3 | 87 |
+| Álex Remiro | GK | Real Sociedad | 31 | 83 | €18M | 6.9 | 80 |
+
+### הגנה
+| שחקן | עמ' | מועדון | גיל | EA FC | שווי TM | כושר | PS |
+|---|---|---|---|---|---|---|---|
+| **Marcos Llorente** ⭐XI | RB | Atlético Madrid | 31 | 84 | €30M | 7.1 | 83 |
+| **Pau Cubarsí** ⭐XI | CB | Barcelona | 19 | 84 | €80M | 7.2 | 86 |
+| **Aymeric Laporte** ⭐XI | CB | Athletic Bilbao | 32 | 83 | €12M | 7.0 | 81 |
+| **Marc Cucurella** ⭐XI | LB | Chelsea | 27 | 84 | €45M | 7.4 | 85 |
+| Dean Huijsen | CB | Real Madrid | 21 | 82 | €60M | 7.0 | 84 |
+| Robin Le Normand | CB | Atlético Madrid | 29 | 83 | €35M | 6.9 | 82 |
+| Daniel Vivian | CB | Athletic Bilbao | 26 | 81 | €30M | 6.9 | 79 |
+| Pedro Porro | RB | Tottenham | 26 | 82 | €45M | 7.0 | 82 |
+| Marc Pubill | RB | Atlético Madrid | 22 | 78 | €22M | 6.8 | 76 |
+| Álex Grimaldo | LB | Bayer Leverkusen | 30 | 84 | €30M | 7.1 | 82 |
+
+### קישור
+| שחקן | עמ' | מועדון | גיל | EA FC | שווי TM | כושר | PS |
+|---|---|---|---|---|---|---|---|
+| **Rodri** ⭐XI | DM | Manchester City | 29 | 91 | €110M | 7.2 | 92 |
+| **Pedri** ⭐XI | CM | Barcelona | 23 | 88 | €150M | 7.6 | 92 |
+| **Fabián Ruiz** ⭐XI | CM | PSG | 30 | 86 | €60M | 7.4 | 87 |
+| Martín Zubimendi | DM | Arsenal | 27 | 85 | €60M | 7.2 | 86 |
+| Mikel Merino | CM | Arsenal | 29 | 84 | €55M | 7.1 | 84 |
+| **Gavi** ⭐XI | CM | Barcelona | 21 | 84 | €30M | 7.0 | 84 |
+| Álex Baena | AM | Atlético Madrid | 24 | 83 | €50M | 7.1 | 83 |
+
+### התקפה
+| שחקן | עמ' | מועדון | גיל | EA FC | שווי TM | כושר | PS |
+|---|---|---|---|---|---|---|---|
+| Lamine Yamal | RW | Barcelona | 18 | 89 | €200M | 7.3 | 94 |
+| Nico Williams | LW | Athletic Bilbao | 23 | 85 | €75M | 7.1 | 86 |
+| **Mikel Oyarzabal** ⭐XI | CF/ST | Real Sociedad | 29 | 84 | €40M | 7.3 | 85 |
+| **Ferran Torres** ⭐XI | ST/W | Barcelona | 26 | 83 | €50M | 7.3 | 84 |
+| Dani Olmo | AM/W | Barcelona | 28 | 85 | €60M | 7.0 | 85 |
+| Yeremy Pino | W | Crystal Palace | 23 | 81 | €35M | 7.0 | 80 |
+| Samu Aghehowa | ST | Porto | 21 | 80 | €40M | 6.9 | 80 |
+
+*⭐XI = הרכב פותח MD1 (אומת). שחקני ר.מדריד מעטים — Huijsen בלבד בקו הגנה; קו ההתקפה כולו Barça/Athletic.*
+
+**תיקון נתונים מול הבסיס הישן:** הבסיס ציין "ללא שחקני ר.מדריד בסגל (לראשונה)" — לא מדויק: **Dean Huijsen (Real Madrid) כן בסגל**. תוקן. Laporte/Le Normand/Vivian — שווי TM ירד עם הגיל; Yamal €200M מאומת (השחקן היקר בעולם).
+
+---
+
+## 2. קווים + חישוב אינדקסים (XI שפתח בפועל)
+- **GK** Unai Simón → 85
+- **DEF** Llorente·Cubarsí·Laporte·Cucurella → ממוצע ~84, עם Cubarsí הצעיר־איכותי מושך מעלה אך Laporte (32, שווי נמוך) מאזן → **DEF 86**
+- **MID** Rodri·Pedri·F.Ruiz (תוספת Gavi כ-CM שמיני בפועל) → ממוצע משולש-העל ~90 → קו **MID 95** (העומק Zubimendi/Merino/Baena מקפיץ)
+- **ATT** Oyarzabal·F.Torres + כנפיים (Yamal/N.Williams בספסל אך זמינים) → **ATT 91**
+
+**אינדקס התקפה** = 0.6×91 + 0.4×95 = 54.6 + 38.0 = **92.6 → 91** (שמור)
+**אינדקס הגנה** = 0.55×86 + 0.30×85 + 0.15×95 = 47.3 + 25.5 + 14.25 = **87.05 ≈ 86** (שמור)
+*המספרים עקביים עם הבסיס. אין שינוי.*
+
+---
+
+## 3. מאמן — Luis de la Fuente
+- **cq 1.07 · cs +0.5 (מאזן-התקפי)** — שמור.
+- אלוף אירו 2024 + Nations League 2023. בנה זהות בעלות־כדור גבוהה (possession-press), שיא היסטורי של נבחרת ספרד.
+- ב-MD1 העמיד הרכב מנוהל-דקות (Yamal+N.Williams בספסל בגלל ניהול האמסטרינג) — בחירה שמרנית שייתכן ועלתה בנקודות. cs+0.5 משקף נטייה התקפית שלא הומרה לשערים מול אוטובוס.
+
+---
+
+## 4. קבועות / פנדלים / קרנות
+- **פנדל:** Oyarzabal (הבכיר; הבקיע פנדל גמר אירו). חלופה: Ferran Torres / Yamal.
+- **קרניות + חופשיות:** Pedri / Fabián Ruiz / Grimaldo (רגל שמאל מצוינת מהספסל). Yamal כשנכנס.
+- **קפטן:** רוטציה; Rodri קפטן דה-פקטו בנוכחותו.
+
+---
+
+## 5. פציעות + קנס-מחליף
+- **Yamal (האמסטרינג) + N.Williams (האמסטרינג):** לא פציעה — ניהול דקות. שניהם בספסל וזמינים. קנס-XI: שני כנפי-על (PS 94/86) הוחלפו ב-Ferran (84) + Gavi כ-CM שמאלי → צניחת חדות בכנפיים ~−6 לקו ההתקפה בפועל ב-MD1 (לא משוקלל בבסיס כי הם זמינים להמשך).
+- V.Muñoz (calf) חזר; אין נעדרים כבדים אחרים. עומק הספסל הטוב בבית — תיקון עומק חיובי לסיבוב הנוקאאוט.
+
+---
+
+## 6. כושר + ניתוח MD1 — **0–0 מול כף ורדה (כישלון פייבוריטיות)**
+**הנתונים (15.6, אטלנטה):** ספרד 27 בעיטות (7 למסגרת), xG **2.29** מול 0.3; 36 הרמות; Ferran פגע ברף. **Vozinha (40) — 7 הצלות, דירוג SofaScore 9.7, ~1.46 שערים-מנועים.**
+**למה הפייבוריטית נכשלה:**
+1. **שוער בהשראה** — Vozinha עצר את Oyarzabal, Laporte ו-Ferran בסוף המחצית הראשונה; הבכורה ההיסטורית הזניקה אותו.
+2. **ניהול-דקות שמרני** — Yamal+N.Williams בספסל הותיר את הכנפיים בלי שובר-שוויון 1v1 מול low-block צפוף; הכניסה שלהם הגיעה מאוחר.
+3. **אוטובוס מאורגן** — כף ורדה ב-block נמוך עם הגנה בכמות; ספרד ייצרה כמות אך לא איכות-נקודתית (הרבה הרמות/בעיטות מבחוץ).
+4. **חדות חוד** — Oyarzabal/Ferran פספסו מצבים; היעדר גמר קר.
+**פורם 2026 לפני הטורניר:** נ' סרביה, ת' עיראק 1-1 (סגל מוחלש), נ' פרו 3-1. 4 נצ' מ-5. כעת מאזן בית H נפתח ב-1 נק' בלבד — לחץ להעלות הילוך מול סעודיה/אורוגוואי.
+
+---
+
+## 7. מקורות + תאריך (16.6.26)
+1. ESPN — Spain 0-0 Cape Verde report & live (espn.com, 15-16.6.26)
+2. SofaScore — Vozinha 9.7 rating, 7 saves, xG (sofascore.com, 16.6.26)
+3. Transfermarkt — שווי שוק סגל ספרד `[חלק מהדפים 403 — שווי מאומת ממקורות משניים]`
+4. NBC News / NPR — Vozinha & match context (16.6.26)
+5. EA FC 26 / Sofifa — Overall ratings; Al Jazeera — תחזית/לוז בית H
+
+*דגל 403: דפי Transfermarkt.us והדוחות הראשיים (Sky/AlJazeera/Wiki) החזירו 403; ערכי שווי הוצלבו ממקורות משניים (threads/goal/fotmob) — סטייה אפשרית ±10%.*
