@@ -23,7 +23,6 @@ FIFA #18 · Elo ~1879 · S3 (חזקה) · בית F
 | ★ Daichi Kamada | CM/AM | Crystal Palace | 29 | 77 | €10M | 7.6 (השווה 89' MD1) | 78 |
 | Ao Tanaka | CM | Leeds | 27 | 76 | €13M | 6.9 | 76 |
 | Hidemasa Morita | DM | Sporting CP | 30 | 76 | €8M≈ | — | 74 |
-| Hugo Larsson — n/a | — | — | — | — | — | — | — |
 | ★ Takefusa Kubo | RW/AM | Real Sociedad | 24 | 82 | €33M | 7.7 (בישל 1–2, MD1) | 83 |
 | ★ Ritsu Doan | RW/LW | Eintracht Frankfurt | 27 | 82 | €17M | 7.1 | 82 |
 | ★ Kaoru Nakamura (K.) | LW/AM | Reims | 26 | 76 | €10M | 7.8 (כבש 1–2, MD1) | 78 |
