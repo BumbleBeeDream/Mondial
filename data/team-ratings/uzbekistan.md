@@ -1,0 +1,6 @@
+# אוזבקיסטן — bottom-up בסיס (16.6) · FIFA ~#57 · S5 · **בכורה היסטורית במונדיאל**
+GK Yusupov(€1M) · עומק Nematov | DEF (3-4-2-1) Khusanov(€34M, Man City, הכוכב)/Abdullaev(€2M)/Ashurmatov(€2M) · עומק Alijonov, Sayfiev(R-WB), Nasrullaev(L-WB) | MID Shukurov(€2M)/Mozgovoy(€3M)/Fayzullaev(€8M, Başakşehir, יוצר)/Urunov · עומק Masharipov, Iskanderov, Khamdamov | ATT Shomurodov(C, €7M, שיא-קולעים 44 שערים) · עומק Urunov(תומך)
+פורמציה 3-4-2-1 זהיר/קומפקטי. קווים: GK63 DEF70 MID68 ATT67 → **התקפה 67 · הגנה 68**. מאמן Fabio Cannavaro (איטלקי, אלוף עולם 2006; cq1.0, cs-0.4 הגנתי — יושב עמוק, קומפקטי, קאונטר עם Shomurodov+Fayzullaev).
+Khusanov(€34M, Man City) עוגן ההגנה והשם הבולט. Fayzullaev היוצר; Shomurodov הקפטן+החוד (שיא הקולעים). שאר הסגל פנים-ליגתי (Pakhtakor/Nasaf/Neftchi) — איכות S5.
+
+UPDATE 16.6.26: FIFA ~#57. **מאמן חדש: Cannavaro** (נכנס אחרי סגירת המוקדמות; Kapadze חזר לסגל המקצועי). בכורה במונדיאל → אי-ודאות (היעדר ניסיון בימה גדולה) + מאמן רענן. XI צפוי 3-4-2-1: Yusupov; Khusanov, Abdullaev, Ashurmatov; Sayfiev, Shukurov, Mozgovoy, Nasrullaev; Fayzullaev, Urunov; Shomurodov. מול קולומביה (MD1, אצטקה) — אנדרדוג כבד אך MD1+בלוק עמוק → תיקו חי. מול קונגו (MD3) — משחק מפתח על מקום-3 (S5 מול S5, GAP≈0).
