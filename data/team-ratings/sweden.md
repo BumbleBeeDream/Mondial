@@ -1,0 +1,6 @@
+# שוודיה — bottom-up בסיס (16.6) · FIFA ~#40 · Elo ~1620 · S3/S4 גבולית (התקפה עילית, מסביב צנוע)
+GK Nordfeldt(AIK, €1M, EA68, גיל36) | DEF Lagerbielke(€5M, EA72)/Hien(€24M, EA78)/Lindelöf(c, €7.5M, EA78)/Gudmundsson(€19M, EA77) · עומק D.Svensson(€15M, EA74) | MID Ayari(€27M, EA75)/Karlström(€4M, EA72)/Svanberg(€11M, EA77)/Nygren(€15M, EA72) · עומק Bernhardsson | ATT **Isak(€85M, EA88)/Gyökeres(€66M, EA87)** · עומק Elanga(€50M, EA79)
+פורמציה 3-4-1-2 (זוג חוד Isak+Gyökeres). קווים: GK68 DEF76 MID74 ATT87 → **התקפה 82 · הגנה 73**. מאמן Potter (cq1.05, cs+0.4 התקפי, מונה 10.2025 אחרי West Ham, חוזה עד 2030).
+נעדרים: **Kulusevski (€36M, EA83, ברך — OUT)** — האובדן הכי גדול (יצירתיות); Nygren/Elanga מכסים. Isak חזר משבר ברגל וכשיר (כבש MD1). Gudmundsson כשיר.
+
+UPDATE 16.6.26 (MD1): **שוודיה שיטחה 5–1 את תוניסיה (Monterrey)** — תצוגה התקפית מתפרצת, בראש בית F. Ayari צמד מטווח ארוך (7', 90+6'), **Isak שער+בישול, Gyökeres שער+בישול** (בישלו זה לזה — זוג חוד עילית), Svanberg שער-חילוף שיא-מהירות (84'). **התקפה רותחת; הגנה/שוער הם החוליה החלשה** (Nordfeldt 36, בלמים צנועים). נקודת תורפה: מול לחץ-נגד/קבוצה שתנצל את ההגנה.

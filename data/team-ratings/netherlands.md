@@ -1,0 +1,6 @@
+# הולנד — bottom-up בסיס (16.6) · FIFA #8 · Elo ~1944 · S2 (עילית)
+GK Verbruggen(€38M, EA80) | DEF Dumfries(€28M, EA84)/Van Dijk(c, €15M, EA90)/Van Hecke(€44M, EA78)/Van de Ven(€73M, EA82) · עומק Aké(€15M, EA82)/Geertruida | MID De Jong(€35M, EA87)/Gravenberch(€90M, EA86)/Reijnders(€50M, EA85) · עומק — | ATT Gakpo(€66M, EA84)/Summerville(€29M, EA79)/Malen(€19M, EA79) · עומק Depay(€8M, EA80, ספסל)
+פורמציה 4-3-3. קווים: GK80 DEF83 MID86 ATT81 → **התקפה 83 · הגנה 82**. מאמן Koeman (cq1.05, cs+0.0 פוסשן איטי-מאוזן, מונה 1.1.2023, מבוסס).
+נעדרים: **Xavi Simons (€75M, ברך — OUT מהמונדיאל)** — מכה יצירתית, מורידה עומק קישור; **Timber נפצע ערב הטורניר** → Geertruida קורא; de Ligt לא נבחר (גב). Frimpong סנוק (לא פציעה).
+
+UPDATE 16.6.26 (MD1): **הולנד נתקעה 2–2 מול יפן (14.6, Dallas)** — פייבוריטית ששלטה בכדור אך לא הרגה את המשחק. Van Dijk כבש (51', נגיחה מהרמת Gravenberch); Summerville 2–1 (64'); יפן השוותה פעמיים מנגיחות עם ריקושטים (Van Hecke + Kamada). **Gravenberch MOTM (2 בישולים).** טקטי: בנייה איטית של Koeman לא פירקה בלוק יפני צפוף; ההגנה פגיעה למעברים מהירים. סיגנל אזהרה — לא חדה מול הגנה חונה.

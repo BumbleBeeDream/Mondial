@@ -1,0 +1,6 @@
+# ק.דרום — bottom-up בסיס (16.6) · FIFA #25 · עלתה מ-MD1 (2-1 על צ'כיה) · פייבוריטית-משנה בבית A
+GK Kim Seung-gyu(€0.8M, FC טוקיו) | DEF Lee Han-beom(€3M)/**Kim Min-jae(€22M, באיירן, עוגן)**/Lee Gi-hyuk(€0.5M) | MID(WB+ציר) Seol Young-woo(€4.8M)/Lee Tae-seok(€2M)/**Hwang In-beom(€7M, פייאנורד — MOTM+שער ב-MD1)**/Paik Seung-ho(€2M) | ATT(2×10+חוד) **Lee Kang-in(€28M, PSG — היוצר)**/Lee Jae-sung(€4.5M)/**Son Heung-min(c)(€15M, LAFC, OVR85)**
+פורמציה 3-4-2-1. קווים: GK72 DEF72 MID73 ATT80 → **התקפה 77 · הגנה 72**. מאמן Hong Myung-bo (cq1.0, cs-0.1 פרגמטי/לחיצה-עם-בלימה, מונה 7.2024). עומק: Oh Hyeon-gyu(€5M, OVR71 — כבש את הניצחון מהספסל 80'), Hwang Hee-chan(€8M, וולבס יורדת — כושר קר 6.4), Jo Hyeon-woo(שוער מחליף).
+פציעות/חסרים: **Park Yong-woo (ציר ראשון) בחוץ** מלפני הטורניר → הוחלף ב-Paik/Hwang In-beom. Bae Jun-ho ספק (קרסול). Kim Min-jae + Hwang In-beom כשירים (התאוששו). אין השעיות.
+
+UPDATE 16.6.26: **MD1 ניצחון 2-1 על צ'כיה** (גואדלחרה) — קמבק מ-0-1: Hwang In-beom 67' (שער+בישול, נבחר ל-Best XI של היום), Oh Hyeon-gyu 80'. כושר 5 אחרונים: 0-5 לברזיל (חשף שבריריות בלם), 2-0 פרגוואי, 2-0 בוליביה, 1-0 גאנה, 2-2 מקסיקו (ידידות 9.9.25). הצמרת אליטה (Son/Kim Min-jae/Lee Kang-in) אבל בלמים צעירים (Lee Gi-hyuk €0.5M) + עומק דק = נקודת תורפה. EA: Son 85, Kim Min-jae 82, Lee Kang-in 79, Hwang In-beom 77.
