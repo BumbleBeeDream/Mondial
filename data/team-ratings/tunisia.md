@@ -27,8 +27,7 @@ FIFA #45 · S4/S5 גבולית · במשבר עמוק (מאמן פוטר אחר�
 | Elias Achouri | W | Copenhagen | 27 | 72 | €3M | — (לא פתח) | 71 |
 | Naïm Sliti | W/AM | (ערב/טורקיה) | 33 | 73 | €1.5M | — | 69 |
 | Sayfallah Ltaief | W/AM | Sion≈ | 25 | 70 | €2M≈ | — | 68 |
-| Elias Saad | W/ST | Augsburg | 25 | 72 | €3.5M | 5.7 | 70 |
-| ★ ST (Saad/חוד) | ST | Augsburg/אחר | 25 | 72 | €3.5M | 5.5 (0 הזד' גדולות) | 69 |
+| ★ Elias Saad | W/ST | Augsburg | 25 | 72 | €3.5M | 5.5 (0 הזד' גדולות) | 70 |
 | Youssef Msakni | W/AM | (ותיק, ערב) | 35 | 70 | €0.4M | — (ספסל) | 64 |
 | Seifeddine Jaziri | ST | (ערב) | 32 | 71 | €1M | — | 67 |
 | Haythem Jouini | ST | (מקומי) | 28 | 68 | €0.8M | — | 65 |

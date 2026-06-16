@@ -33,7 +33,7 @@ FIFA #18 · Elo ~1879 · S3 (חזקה) · בית F
 | Koki Ogawa | ST | NEC Nijmegen | 28 | 74 | €4M≈ | — | 72 |
 | Yuito Suzuki | AM/W | Brøndby/Freiburg | 24 | 74 | €10M≈ | — | 74 |
 
-> תיקון: **Endo (קפטן) פרש מנבחרת לאחר פציעת רגל** ערב הטורניר — **Itakura קפטן חדש**, **Machino נקרא במקומו** (לא רק "OUT"). הבסיס הקודם רשם Taniguchi כ-XI; בפועל MD1 פתח **שלישיית בלמים Ito/Itakura/Watanabe** עם מעבר לבק-4 במהלך המשחק. שורת "Hugo Larsson" אינה רלוונטית ליפן — מסומנת n/a (שמירה על מבנה, ללא שחקן).
+> תיקון: **Endo (קפטן) פרש מנבחרת לאחר פציעת רגל** ערב הטורניר — **Itakura קפטן חדש**, **Machino נקרא במקומו** (לא רק "OUT"). הבסיס הקודם רשם Taniguchi כ-XI; בפועל MD1 פתח **שלישיית בלמים Ito/Itakura/Watanabe** עם מעבר לבק-4 במהלך המשחק.
 
 ## קווים וחישוב אינדקסים (3-4-2-1 גמיש לבק-4)
 - **GK 75** (Z.Suzuki) · **DEF 74** (Ito 78, Itakura 76, Watanabe 74 → ≈74; עומק Tomiyasu/Seko) · **MID 77** (Sano 79 העוגן, Kamada 78, +WB Sugawara/Nakamura → ≈77) · **ATT 79** (Kubo 83, Doan 82, Maeda 79, Ueda 77 — קו קדמי איכותי וחד במעברים).
