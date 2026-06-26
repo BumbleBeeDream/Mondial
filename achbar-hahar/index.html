@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>עכבר ההר · מדריך קהילתי לאזור מרום גולן</title>
+<meta name="description" content="המדריך הקהילתי לכל מה שיש לטעום, לטייל ולגלות באזור מרום גולן ורמת הגולן — מתעדכן ישירות מהגיליון השיתופי.">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="עכבר ההר — מדריך קהילתי לאזור מרום גולן">
+<meta property="og:description" content="כל מה שיש לטעום, לטייל ולגלות באזור מרום גולן ורמת הגולן.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+<style>
+  :root{
+    --basalt:#20302E; --basalt-card:#2C3A39; --paper:#F3EEE2; --card:#FBF8F0;
+    --ink:#21282A; --ink-soft:#5A6562; --line:rgba(31,42,42,.12); --ember:#C9572E;
+  }
+  html,body{margin:0;padding:0;background:var(--paper)}
+  *{box-sizing:border-box}
+  body{font-family:"Assistant",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;color:var(--ink)}
+  a{color:inherit}
+  h1,h2,h3,h4{font-family:"Rubik",sans-serif}
+  ::-webkit-scrollbar{height:8px;width:8px}
+  ::-webkit-scrollbar-thumb{background:rgba(31,42,42,.18);border-radius:999px}
+
+  .wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(14px,3vw,26px)}
+
+  /* header */
+  header.app{position:sticky;top:0;z-index:1000;background:var(--basalt);color:var(--paper);border-bottom:3px solid var(--ember)}
+  header.app .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-block:11px}
+  .brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+  .brand h1{font-weight:800;font-size:clamp(19px,2.4vw,24px);margin:0;letter-spacing:-.02em;line-height:1}
+  .brand p{margin:2px 0 0;font-size:12.5px;color:#AFB6AE;font-weight:500}
+  .search{flex:1 1 260px;min-width:190px;position:relative;display:flex;align-items:center}
+  .search svg{position:absolute;inset-inline-start:13px;pointer-events:none}
+  .search input{width:100%;padding:11px 40px 11px 14px;border:1px solid rgba(243,238,226,.18);border-radius:12px;
+    background:rgba(243,238,226,.07);color:var(--paper);font-family:"Assistant",sans-serif;font-size:16px;outline:none;min-height:44px}
+  .search input::placeholder{color:#9AA3A0}
+  .search input:focus{border-color:rgba(243,238,226,.45)}
+  .add-btn{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;background:var(--ember);color:#fff;text-decoration:none;
+    font-family:"Rubik",sans-serif;font-weight:600;font-size:14.5px;padding:11px 16px;border-radius:12px;min-height:44px;transition:filter .15s}
+  .add-btn:hover{filter:brightness(1.08)}
+
+  /* hero */
+  .hero{position:relative;width:100%;height:clamp(216px,29vw,332px);overflow:hidden;background:#EFE7D5;border-bottom:3px solid var(--ember)}
+  .hero svg.scene{display:block;position:absolute;inset:0}
+  .hero .card{position:absolute;inset-inline-start:clamp(14px,3vw,40px);bottom:18px;max-width:min(560px,82%);
+    background:rgba(32,48,46,.78);backdrop-filter:blur(3px);color:var(--paper);padding:13px 18px;border-radius:14px;border:1px solid rgba(243,238,226,.16)}
+  .hero .pill{display:inline-flex;align-items:center;gap:6px;background:var(--ember);color:#fff;font-family:"Rubik",sans-serif;
+    font-weight:700;font-size:11.5px;letter-spacing:.03em;padding:4px 11px;border-radius:999px;margin-bottom:9px}
+  .hero h2{margin:0;font-family:"Rubik",sans-serif;font-weight:700;font-size:clamp(15px,1.8vw,20px);line-height:1.3}
+  .hero .sub{margin:5px 0 0;font-size:13px;color:#C7CDC4;font-weight:500}
+
+  /* category nav */
+  nav.cats{position:sticky;top:var(--header-h,60px);z-index:900;background:rgba(243,238,226,.92);backdrop-filter:blur(6px);border-bottom:1px solid rgba(31,42,42,.1)}
+  nav.cats .row{display:flex;gap:9px;overflow-x:auto;padding-block:11px}
+  .chip{flex:0 0 auto;cursor:pointer;display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:8px 14px 8px 12px;
+    font-family:"Rubik",sans-serif;font-weight:600;font-size:14.5px;white-space:nowrap;transition:all .15s;min-height:40px;
+    border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+  .chip:hover{border-color:var(--hov,var(--line))}
+  .chip .cnt{font-size:12px;font-weight:700;color:var(--ink-soft)}
+  .chip.active{background:var(--basalt);color:var(--paper);border-color:var(--basalt)}
+  .chip.active .cnt{color:#9FA8A2}
+  .chip:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+
+  /* layout */
+  .grid{display:grid;gap:24px;padding:24px 0 48px;align-items:start;grid-template-columns:minmax(0,1.04fr) minmax(0,0.96fr)}
+  .count-line{font-size:13.5px;color:var(--ink-soft);margin:0 2px 16px;font-weight:600}
+  .toggle{position:sticky;z-index:850;display:none;gap:0;margin:14px 0 0;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:3px}
+  .toggle button{flex:1;border:none;background:transparent;cursor:pointer;font-family:"Rubik",sans-serif;font-weight:600;font-size:14.5px;padding:11px;border-radius:9px;color:var(--ink-soft);min-height:44px}
+  .toggle button.on{background:var(--basalt);color:var(--paper)}
+
+  /* sections + cards */
+  .section{margin-bottom:30px}
+  .sec-head{display:flex;align-items:center;gap:13px;margin:0 2px 15px}
+  .sec-head .tile{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;flex:0 0 auto}
+  .sec-head h3{font-weight:700;font-size:21px;margin:0;color:var(--ink);letter-spacing:-.01em}
+  .sec-head .desc{margin:2px 0 0;font-size:13.5px;color:var(--ink-soft)}
+  .sec-head .rule{flex:1;height:1.5px;background:repeating-linear-gradient(90deg,rgba(31,42,42,.14) 0 7px,transparent 7px 13px)}
+  .cards{display:flex;flex-direction:column;gap:12px}
+
+  article.place{position:relative;overflow:hidden;background:var(--card);border:1.5px solid var(--line);border-radius:16px;
+    padding:16px 18px 16px 20px;box-shadow:0 1px 2px rgba(31,42,42,.05),0 6px 18px rgba(31,42,42,.06);
+    cursor:pointer;transition:transform .12s,border-color .15s,box-shadow .15s}
+  article.place:hover{transform:translateY(-2px);border-color:var(--hov)}
+  article.place.sel{border-color:var(--hov);box-shadow:0 0 0 2px var(--hov) inset,0 8px 24px rgba(31,42,42,.1)}
+  article.place:focus-visible{outline:2px solid var(--basalt);outline-offset:2px}
+  article.place .bar{position:absolute;inset-inline-start:0;top:0;bottom:0;width:5px}
+  article.place .title-row{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+  article.place h4{font-weight:700;font-size:19px;margin:0;color:var(--ink);letter-spacing:-.01em}
+  article.place .cat-tag{font-size:11.5px;font-weight:700;letter-spacing:.04em}
+  article.place .meta{margin:5px 0 0;font-size:14.5px;color:var(--ink-soft)}
+  article.place .notes{display:inline-block;margin-top:10px;font-size:13px;font-weight:600;background:rgba(201,87,46,.1);color:var(--ember);padding:3px 10px;border-radius:8px}
+  .actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}
+  .act{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-family:"Rubik",sans-serif;font-weight:500;font-size:13.5px;
+    padding:9px 13px;border-radius:10px;white-space:nowrap;min-height:40px}
+  .act .num{unicode-bidi:isolate;direction:ltr}
+  .act.call{background:#4A7A3A;color:#fff;border:1px solid #4A7A3A;transition:filter .15s}
+  .act.call:hover{filter:brightness(1.07)}
+  .act.maps{background:#fff;color:var(--ink);border:1px solid rgba(31,42,42,.14);transition:border-color .15s}
+  .act.maps:hover{border-color:var(--ink)}
+
+  .empty{text-align:center;padding:52px 20px;color:var(--ink-soft)}
+  .empty .big{font-family:"Rubik",sans-serif;font-size:19px;color:var(--ink);margin-bottom:6px}
+
+  /* map */
+  aside.map-wrap{position:sticky;min-width:0}
+  #map{height:clamp(400px,72vh,760px);border-radius:16px;border:1px solid var(--line);
+    box-shadow:0 1px 2px rgba(31,42,42,.06),0 10px 30px rgba(31,42,42,.09);overflow:hidden;background:#dfe6e2}
+  aside.map-wrap .cap{font-size:12px;color:var(--ink-soft);margin:9px 4px 0;line-height:1.5}
+  .leaflet-container{font-family:"Assistant",sans-serif}
+  .achbar-pin{width:26px;height:26px;border-radius:50% 50% 50% 2px;transform:rotate(45deg);border:2.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);cursor:pointer}
+  .achbar-pop b{font-family:"Rubik",sans-serif;font-size:15px;color:var(--ink)}
+  .achbar-pop span{display:block;color:var(--ink-soft);font-size:13px;margin-top:2px}
+  .leaflet-popup-content-wrapper{border-radius:12px}
+
+  /* live status */
+  .status{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-soft);margin:0 2px 14px;font-weight:600}
+  .status .dot{width:8px;height:8px;border-radius:50%;background:#B0822A;flex:0 0 auto}
+  .status.live .dot{background:#4A7A3A}
+
+  /* footer */
+  footer.app{background:var(--basalt);color:#C7CDC4;border-top:3px solid var(--ember)}
+  footer.app .row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;align-items:center;padding-block:22px}
+  footer.app a{color:#E89A78;font-weight:700;text-decoration:none;font-family:"Rubik",sans-serif}
+
+  @media (max-width:860px){
+    .grid{grid-template-columns:minmax(0,1fr)}
+    .toggle{display:flex}
+    aside.map-wrap{position:relative}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important}
+    article.place:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+"use strict";
+/* ============================================================================
+   עכבר ההר — Achbar HaHar · community guide for Merom Golan / Golan Heights
+   Single self-contained page. Reads LIVE from the shared Google Sheet (6 tabs,
+   each a category) and falls back to a built-in seed snapshot so the page always
+   renders — even offline or inside sandboxed previews.
+
+   • Add / edit places: anyone edits the Google Sheet; the page reflects it on
+     the next load (and we cache the last good copy in localStorage).
+   • To change how a tab maps onto a card, edit TABS below.
+   ========================================================================== */
+
+const SHEET_ID = "1FvKhqpVX_nmi6LshkqSVU2f4XmdAD6DFEE9Ra1GCzRE";
+const SHEET_EDIT_URL = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit";
+const CACHE_KEY = "achbar_cache_v1";
+const csvUrl = gid => "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&gid=" + gid;
+
+/* The five design categories (color, icon, blurb, header-tile tint). */
+const CATS = {
+  "אוכל":     {color:"#C9572E", icon:"food",   desc:"בתי קפה, מסעדות ומאפיות", tint:"rgba(201,87,46,.12)"},
+  "טיולים":   {color:"#4A7A3A", icon:"trail",  desc:"שבילים, מעיינות ותצפיות",  tint:"rgba(74,122,58,.15)"},
+  "בריאות":   {color:"#3F8E8C", icon:"leaf",   desc:"מטפלים, טיפוח ובעלי מקצוע", tint:"rgba(63,142,140,.14)"},
+  "עסקים":    {color:"#B0822A", icon:"biz",    desc:"שירותים ועסקים מקומיים",   tint:"rgba(176,130,42,.14)"},
+  "אנשי קשר": {color:"#5C6E6C", icon:"people", desc:"מספרים שטוב להכיר",         tint:"rgba(92,110,108,.15)"}
+};
+const CAT_ORDER = Object.keys(CATS);
+
+/* Per-tab config of the REAL sheet. Each tab is one category; the tabs have
+   different shapes, so we map by column index and skip header/instruction rows.
+   roles: name, sub, settlement, phone, notes (any may be omitted). */
+const TABS = [
+  {gid:"0",          cat:"אוכל",    start:1, cols:{name:0, sub:1, settlement:2, notes:3}},
+  {gid:"778533670",  cat:"טיולים",  start:1, cols:{name:0, settlement:1, sub:2}},
+  {gid:"2105392343", cat:"בריאות",  start:2, cols:{sub:0, name:1, settlement:2, phone:3}},
+  {gid:"1145668490", cat:"בריאות",  start:2, cols:{sub:0, name:1, settlement:2, phone:3}}, /* טיפוח / קוסמטיקה */
+  {gid:"1121942293", cat:"עסקים",   start:1, cols:{name:0, sub:1}},                        /* sub = "בבעלות מי" */
+  {gid:"1505223941", cat:"אנשי קשר",start:1, cols:{name:0, phone:1}}
+];
+
+/* Approximate settlement-level coordinates (Golan / Hula). Matched by substring,
+   so "ליד נמרוד" / "קרוב לקצרין" still resolve. Exact lat/lng can be added later. */
+const GEO = {
+  "מרום גולן":[33.1336,35.7906], "עין זיוון":[33.0875,35.7669], "קדמת צבי":[32.998,35.722],
+  "מחניים":[33.020,35.572], "אמיר":[33.183,35.617], "בית המכס":[33.013,35.625],
+  "קלע":[32.945,35.770], "אורטל":[33.085,35.755], "נאות מרדכי":[33.183,35.603],
+  "בית הלל":[33.238,35.612], "נמרוד":[33.250,35.713], "קצרין":[32.990,35.690],
+  "בנטל":[33.118,35.782], "אורוות הסוסים":[33.130,35.788], "חרמון":[33.300,35.785]
+};
+function geocode(text){
+  if(!text) return null;
+  for(const key in GEO){ if(text.indexOf(key) !== -1) return GEO[key]; }
+  return null;
+}
+
+/* Built-in seed = a normalized snapshot of the current sheet. Guarantees the
+   page works even when the live fetch is blocked. */
+const SEED = [
+  {cat:"אוכל", name:"המרפסת (שיפרה)", sub:"בית קפה", settlement:"מרום גולן", phone:"", notes:""},
+  {cat:"אוכל", name:"פרא", sub:"מסעדת שף", settlement:"בית המכס", phone:"", notes:""},
+  {cat:"אוכל", name:"לפיצל'ה", sub:"פיצרייה", settlement:"מרום גולן", phone:"", notes:""},
+  {cat:"אוכל", name:"נורדן", sub:"בר ובשר", settlement:"מרום גולן", phone:"", notes:""},
+  {cat:"אוכל", name:"סמסם", sub:"עגלת קפה שווה", settlement:"קדמת צבי", phone:"", notes:""},
+  {cat:"אוכל", name:"מושיץ", sub:"בית קפה", settlement:"מחניים", phone:"", notes:""},
+  {cat:"אוכל", name:"בר יין", sub:"איטלקית", settlement:"אמיר", phone:"", notes:""},
+  {cat:"אוכל", name:"החושה", sub:"מאפייה", settlement:"עין זיוון", phone:"", notes:"פתוח רק בשישי"},
+
+  {cat:"טיולים", name:"מאגר המים הבנטל", sub:"מאגר מים חמים — קל", settlement:"צמוד לקיבוץ", phone:"", notes:""},
+  {cat:"טיולים", name:"טיפוס לבנטל", sub:"בינוני פלוס", settlement:"שביל בסוף אורוות הסוסים", phone:"", notes:""},
+  {cat:"טיולים", name:"הנחל בנאות מרדכי", sub:"קל", settlement:"נאות מרדכי", phone:"", notes:""},
+  {cat:"טיולים", name:"קמפינג על החצבאני", sub:"מקום לקמפינג", settlement:"ליד בית הלל", phone:"", notes:""},
+  {cat:"טיולים", name:"עין חרמון", sub:"קל", settlement:"ליד נמרוד", phone:"", notes:""},
+  {cat:"טיולים", name:"עין דיבשה", sub:"קל", settlement:"", phone:"", notes:""},
+  {cat:"טיולים", name:"שביל הנופלים", sub:"קל", settlement:"ביציאה מהקיבוץ בדרך למאגר", phone:"", notes:""},
+  {cat:"טיולים", name:"סלוקיה (מעיינות עדן)", sub:"קל", settlement:"קרוב לקצרין", phone:"", notes:""},
+
+  {cat:"בריאות", name:"אלונה", sub:"רפואה סינית", settlement:"פרטי · קלע", phone:"050-6353071", notes:""},
+  {cat:"בריאות", name:"מאיר בילרד", sub:"הומאופתיה", settlement:"פרטי · קלע", phone:"", notes:""},
+  {cat:"בריאות", name:"מאירה זיני", sub:"רפלקסולוגיה · דולה · קונסטלציה משפחתית", settlement:"עין זיוון", phone:"050-374-6719", notes:""},
+  {cat:"בריאות", name:"מרפאת שיניים", sub:"שיניים", settlement:"אורטל", phone:"052-5612347", notes:""},
+  {cat:"בריאות", name:"איברהים", sub:"שיניים", settlement:"מרום גולן", phone:"054-2404635", notes:""},
+
+  {cat:"עסקים", name:"מכירת רכבים", sub:"בבעלות גלעד קטן", settlement:"", phone:"", notes:"עד שזוכה בלוטו :)"},
+
+  {cat:"אנשי קשר", name:"רויטל", sub:"", settlement:"", phone:"", notes:""},
+  {cat:"אנשי קשר", name:"יוליה", sub:"", settlement:"", phone:"", notes:""},
+  {cat:"אנשי קשר", name:"נעמה", sub:"", settlement:"", phone:"", notes:""},
+  {cat:"אנשי קשר", name:"טל אשכר", sub:"", settlement:"", phone:"", notes:""},
+  {cat:"אנשי קשר", name:"תמוז", sub:"", settlement:"", phone:"", notes:""}
+];
+
+function decorate(d){
+  const c = geocode(d.settlement) || geocode(d.name);
+  return Object.assign({sub:"", settlement:"", phone:"", notes:"", lat:"", lng:""}, d, c ? {lat:c[0], lng:c[1]} : {});
+}
+
+/* ---------- icons ---------- */
+const ICON_PATHS = {
+  all:    ["M3 5h7v6H3z","M14 5h7v4h-7z","M14 13h7v6h-7z","M3 15h7v4H3z"],
+  food:   ["M5 9h9v4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z","M14 9h2a2 2 0 0 1 0 4h-2","M8 2.5c.6 1 .6 2 0 3","M11 2.5c.6 1 .6 2 0 3"],
+  trail:  ["M3 20l5-9 3.5 5L15 9l6 11z","M14.5 9.5l1-1.8 1 1.8"],
+  leaf:   ["M20 4C10 4 4 10 4 20c10 0 16-6 16-16z","M5 19C9 14 13 12 18 11"],
+  biz:    ["M4 8h16v11H4z","M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2","M4 13h16"],
+  people: ["M5.5 20a6.5 6.5 0 0 1 13 0","M12 4a3.4 3.4 0 1 0 0 6.8A3.4 3.4 0 0 0 12 4z"]
+};
+function icon(name, color, size){
+  size = size || 21;
+  const paths = (ICON_PATHS[name]||[]).map(d => '<path d="'+d+'"/>').join("");
+  return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="none" stroke="'+(color||"currentColor")+
+    '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths+'</svg>';
+}
+
+/* ---------- state ---------- */
+const state = { data: [], activeCat:"all", query:"", selected:null, live:false, mobileView:"list" };
+let map = null, markers = {}, mapInited = false, _seq = 0;
+
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function assignIds(arr){ arr.forEach(d => d._id = "p"+(_seq++)); return arr; }
+
+function matchText(d){ return d.name+" "+d.sub+" "+d.settlement+" "+d.notes+" "+d.cat; }
+function matches(d){
+  if(state.activeCat !== "all" && d.cat !== state.activeCat) return false;
+  const q = state.query.trim();
+  return !q || matchText(d).indexOf(q) !== -1;
+}
+/* Real Google Maps SEARCH link (by name + area) — finds the actual place, not a
+   CRM page and not a bare coordinate. Opens in the user's own Maps app. */
+function mapsUrl(d){
+  const q = [d.name, d.settlement, "רמת הגולן"].filter(Boolean).join(" ");
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+}
+function telHref(phone){ return "tel:" + String(phone).replace(/[^0-9+]/g,""); }
+
+/* ============================ static chrome (mounted once) ================== */
+function logo(){
+  return '<svg viewBox="0 0 64 64" width="46" height="46" style="display:block;flex:0 0 auto" aria-label="לוגו עכבר ההר">'+
+    '<path d="M2 53 L21 26 L33 41 L43 30 L62 53 Z" fill="#2C3A39" stroke="#F3EEE2" stroke-width="2"/>'+
+    '<circle cx="22" cy="19" r="9" fill="#C9572E" stroke="#F3EEE2" stroke-width="2.2"/>'+
+    '<circle cx="42" cy="19" r="9" fill="#C9572E" stroke="#F3EEE2" stroke-width="2.2"/>'+
+    '<path d="M19 26 C19 41, 45 41, 45 26 C45 21, 38 19.5, 32 19.5 C26 19.5, 19 21, 19 26 Z" fill="#3A5F2E" stroke="#F3EEE2" stroke-width="2.2"/>'+
+    '<circle cx="27.5" cy="29" r="1.9" fill="#1F2A2A"/><circle cx="36.5" cy="29" r="1.9" fill="#1F2A2A"/>'+
+    '<circle cx="32" cy="34" r="2.2" fill="#C9572E"/>'+
+    '<path d="M32 35 L18 39 M32 35 L17 36 M32 35 L19 43" stroke="#F3EEE2" stroke-width="1.2" opacity=".7" fill="none" stroke-linecap="round"/>'+
+    '<path d="M32 35 L46 39 M32 35 L47 36 M32 35 L45 43" stroke="#F3EEE2" stroke-width="1.2" opacity=".7" fill="none" stroke-linecap="round"/></svg>';
+}
+function header(){
+  return '<header class="app"><div class="wrap row">'+
+    '<div class="brand">'+logo()+
+      '<div><h1>עכבר ההר</h1><p>כל מה שיש באזור מרום גולן</p></div></div>'+
+    '<div class="search">'+
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9AA3A0" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'+
+      '<input id="search" type="search" placeholder="חיפוש: שם, יישוב, סוג…" autocomplete="off" aria-label="חיפוש מקום">'+
+    '</div>'+
+    '<a class="add-btn" href="'+SHEET_EDIT_URL+'" target="_blank" rel="noopener">'+
+      '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>הוספת מקום</a>'+
+  '</div></header>';
+}
+function hero(){
+  return '<div class="hero"><svg class="scene" viewBox="0 0 1440 380" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" aria-hidden="true">'+
+    '<defs><linearGradient id="achSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFE6D3"/><stop offset="1" stop-color="#F6F1E6"/></linearGradient>'+
+    '<radialGradient id="achSun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F2C781" stop-opacity="0.85"/><stop offset="1" stop-color="#F2C781" stop-opacity="0"/></radialGradient></defs>'+
+    '<rect x="0" y="0" width="1440" height="380" fill="url(#achSky)"/>'+
+    '<circle cx="312" cy="118" r="135" fill="url(#achSun)"/><circle cx="312" cy="118" r="56" fill="#ECB25E" opacity="0.9"/>'+
+    '<g stroke="#9AA39E" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.65"><path d="M880 96 q12 -11 24 0 q12 -11 24 0"/><path d="M955 78 q9 -8 18 0 q9 -8 18 0"/></g>'+
+    '<polygon points="0,206 90,172 150,150 215,116 270,150 330,136 400,166 470,140 540,176 610,150 690,186 770,160 860,150 940,178 1030,150 1120,182 1210,158 1300,180 1390,162 1440,176 1440,380 0,380" fill="#AEB9BC" opacity="0.92"/>'+
+    '<g fill="#F4F1EA"><polygon points="200,132 215,116 231,133"/><polygon points="457,153 470,140 484,154"/><polygon points="1017,163 1030,150 1044,164"/><polygon points="1196,170 1210,158 1224,171"/></g>'+
+    '<path d="M0,250 C 180,228 320,236 470,256 C 640,278 780,240 940,252 C 1110,265 1280,256 1440,250 L1440,380 L0,380 Z" fill="#7BA15B"/>'+
+    '<path d="M0,298 C 160,286 300,288 430,298 C 470,262 520,234 590,234 C 660,234 705,264 745,300 C 900,320 1050,292 1230,302 C 1330,308 1390,306 1440,302 L1440,380 L0,380 Z" fill="#5C8540"/>'+
+    '<path d="M470,302 Q500,240 560,226 Q590,219 620,226 Q680,240 710,302 Z" fill="#54803A"/>'+
+    '<path d="M548,230 Q590,217 632,230 Q590,242 548,230 Z" fill="#456A2F"/>'+
+    '<path d="M560,302 C 547,286 600,280 582,263 C 567,251 600,246 588,234" stroke="#CBA862" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9"/>'+
+    '<g stroke="#2C3A39" stroke-width="2.2" stroke-linecap="round"><path d="M576,226 L576,198"/><path d="M606,224 L606,194"/></g>'+
+    '<circle cx="576" cy="197" r="2.4" fill="#C9572E"/><circle cx="606" cy="193" r="2.4" fill="#C9572E"/>'+
+    '<path d="M0,330 C 220,318 430,328 640,342 C 860,356 1080,330 1280,340 C 1360,344 1410,342 1440,341 L1440,380 L0,380 Z" fill="#3E6330"/>'+
+    '<g><ellipse cx="1092" cy="352" rx="68" ry="13" fill="#4E9C97"/><ellipse cx="1092" cy="349" rx="42" ry="7.5" fill="#6FB4AE"/>'+
+    '<path d="M1050,352 Q1092,360 1134,352" stroke="#C6E5E1" stroke-width="1.6" fill="none" opacity="0.8"/><path d="M1064,348 Q1092,353 1120,348" stroke="#C6E5E1" stroke-width="1.4" fill="none" opacity="0.7"/></g>'+
+    '<g><polygon points="246,348 235,348 240,330 245,348" fill="#5a3c24"/><rect x="238.5" y="346" width="3" height="6" fill="#3a2716"/>'+
+    '<polygon points="232,346 248,346 240,322" fill="#2F4A26"/><polygon points="234,338 246,338 240,320" fill="#365829"/>'+
+    '<polygon points="1296,346 1285,346 1290,330 1295,346" fill="#5a3c24"/><polygon points="1282,344 1298,344 1290,322" fill="#2F4A26"/></g>'+
+    '<g stroke="#20302E" stroke-width="2.4">'+
+    '<polygon points="56,344 66,361 46,361 36,344 46,327 66,327" fill="#3D4D46"/><polygon points="96,344 106,361 86,361 76,344 86,327 106,327" fill="#34433D"/>'+
+    '<polygon points="136,344 146,361 126,361 116,344 126,327 146,327" fill="#3D4D46"/><polygon points="176,344 186,361 166,361 156,344 166,327 186,327" fill="#2C3A35"/>'+
+    '<polygon points="36,378 46,395 26,395 16,378 26,361 46,361" fill="#34433D"/><polygon points="76,378 86,395 66,395 56,378 66,361 86,361" fill="#3D4D46"/>'+
+    '<polygon points="116,378 126,395 106,395 96,378 106,361 126,361" fill="#2C3A35"/><polygon points="156,378 166,395 146,395 136,378 146,361 166,361" fill="#3D4D46"/>'+
+    '<polygon points="196,378 206,395 186,395 176,378 186,361 206,361" fill="#34433D"/></g>'+
+    '<g transform="translate(126,313)"><ellipse cx="8" cy="11" rx="11" ry="8" fill="#26322E" stroke="#F3EEE2" stroke-width="1.2"/>'+
+    '<circle cx="1" cy="3" r="4.6" fill="#2C3A39" stroke="#F3EEE2" stroke-width="1.1"/><circle cx="13" cy="3" r="4.6" fill="#2C3A39" stroke="#F3EEE2" stroke-width="1.1"/>'+
+    '<path d="M18 12 q9 1 8 9" stroke="#F3EEE2" stroke-width="1.4" fill="none" stroke-linecap="round"/><circle cx="4" cy="9" r="1.1" fill="#F3EEE2"/><circle cx="2" cy="13" r="1.3" fill="#C9572E"/></g>'+
+    '</svg>'+
+    '<div class="card"><span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg>תושבים ממליצים</span>'+
+    '<h2>המדריך הקהילתי לכל מה שיש לטעום, לטייל ולגלות באזור</h2>'+
+    '<p class="sub">בין הבזלת והמעיינות · מרום גולן ורמת הגולן</p></div></div>';
+}
+function footer(){
+  return '<footer class="app"><div class="wrap row">'+
+    '<span>עכבר ההר · מדריך קהילתי לאזור מרום גולן. כולם מוזמנים להוסיף מקום אהוב.</span>'+
+    '<a href="'+SHEET_EDIT_URL+'" target="_blank" rel="noopener">+ הוספת מקום</a></div></footer>';
+}
+
+/* ============================ dynamic parts ================================ */
+function chipsHtml(){
+  const q = state.query.trim();
+  const searchOnly = state.data.filter(d => !q || matchText(d).indexOf(q) !== -1);
+  const count = id => id === "all" ? searchOnly.length : searchOnly.filter(d => d.cat === id).length;
+  return [["all","הכל","all","#C9572E"], ...CAT_ORDER.map(c => [c, c, CATS[c].icon, CATS[c].color])]
+    .map(([id,label,ic,color]) => {
+      const on = state.activeCat === id;
+      return '<button class="chip'+(on?" active":"")+'" data-cat="'+esc(id)+'" style="--hov:'+color+'">'+
+        '<span style="color:'+color+';display:inline-flex">'+icon(ic,color,18)+'</span>'+esc(label)+
+        '<span class="cnt">'+count(id)+'</span></button>';
+    }).join("");
+}
+function cardHtml(d){
+  const C = CATS[d.cat];
+  const meta = [d.sub, d.settlement].filter(Boolean).join(" · ");
+  const showMaps = d.cat !== "אנשי קשר";
+  let actions = "";
+  if(d.phone) actions += '<a class="act call" href="'+telHref(d.phone)+'" data-stop>'+phoneIcon()+
+    '<span class="num">'+esc(d.phone)+'</span></a>';
+  if(showMaps) actions += '<a class="act maps" href="'+mapsUrl(d)+'" target="_blank" rel="noopener" data-stop>'+
+    mapsIcon()+'במפות גוגל</a>';
+  return '<article class="place'+(d===state.selected?" sel":"")+'" tabindex="0" data-id="'+d._id+'" style="--hov:'+C.color+'">'+
+    '<div class="bar" style="background:'+C.color+'"></div>'+
+    '<div class="title-row"><h4>'+esc(d.name)+'</h4>'+
+      '<span class="cat-tag" style="color:'+C.color+'">'+esc(d.cat)+'</span></div>'+
+    (meta?'<p class="meta">'+esc(meta)+'</p>':'')+
+    (d.notes?'<span class="notes">'+esc(d.notes)+'</span>':'')+
+    (actions?'<div class="actions">'+actions+'</div>':'')+
+  '</article>';
+}
+function phoneIcon(){ return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>'; }
+function mapsIcon(){ return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>'; }
+
+function sectionsHtml(){
+  const visible = state.data.filter(matches);
+  if(!visible.length) return '<div class="empty"><div class="big">לא נמצא כלום</div>נסו חיפוש אחר או קטגוריה אחרת.</div>';
+  const cats = state.activeCat === "all" ? CAT_ORDER : [state.activeCat];
+  let html = "";
+  cats.forEach(cat => {
+    const items = visible.filter(d => d.cat === cat);
+    if(!items.length) return;
+    const C = CATS[cat];
+    html += '<section class="section"><div class="sec-head">'+
+      '<div class="tile" style="background:'+C.tint+';color:'+C.color+'">'+icon(C.icon,C.color)+'</div>'+
+      '<div style="min-width:0"><h3>'+esc(cat)+'</h3><p class="desc">'+esc(C.desc)+' · '+items.length+' מקומות</p></div>'+
+      '<div class="rule"></div></div><div class="cards">'+items.map(cardHtml).join("")+'</div></section>';
+  });
+  return html;
+}
+function statusHtml(){
+  return '<div class="status'+(state.live?" live":"")+'"><span class="dot"></span>'+
+    (state.live ? "מתעדכן ישירות מהגיליון השיתופי" : "מוצג מידע שמור — מתחבר לגיליון…")+'</div>';
+}
+
+/* ---------- update (re-render dynamic parts only; map node persists) ------- */
+function update(){
+  document.getElementById("cats-row").innerHTML = chipsHtml();
+  document.getElementById("cats-row").querySelectorAll(".chip").forEach(b =>
+    b.onclick = () => { state.activeCat = b.dataset.cat; state.selected = null; update(); });
+
+  const visible = state.data.filter(matches);
+  document.getElementById("count").textContent = visible.length ? visible.length + " מקומות" : "";
+  document.getElementById("status").innerHTML = statusHtml();
+  const list = document.getElementById("list");
+  list.innerHTML = sectionsHtml();
+  list.querySelectorAll("article.place").forEach(a => {
+    a.onclick = e => { if(e.target.closest("[data-stop]")) return; selectById(a.dataset.id); };
+    a.onkeydown = e => { if((e.key==="Enter"||e.key===" ") && !e.target.closest("[data-stop]")){ e.preventDefault(); selectById(a.dataset.id); } };
+  });
+  applyResponsive();
+  renderMarkers();
+}
+function applyResponsive(){
+  const narrow = window.innerWidth <= 860;
+  document.querySelectorAll(".toggle button").forEach(b => b.classList.toggle("on", b.dataset.view === state.mobileView));
+  const listPane = document.getElementById("list-pane");
+  const mapPane = document.getElementById("map-pane");
+  if(narrow){
+    listPane.style.display = state.mobileView === "list" ? "block" : "none";
+    mapPane.style.display  = state.mobileView === "map"  ? "block" : "none";
+  } else { listPane.style.display = "block"; mapPane.style.display = "block"; }
+  if(map) setTimeout(() => { if(map) map.invalidateSize(); }, 60);
+}
+function selectById(id){
+  const d = state.data.find(x => x._id === id);
+  state.selected = (state.selected === d) ? null : d;
+  update();
+  if(map && state.selected && state.selected.lat !== ""){
+    map.setView([state.selected.lat, state.selected.lng], Math.max(map.getZoom(),13), {animate:true});
+    const m = markers[id]; if(m) m.openPopup();
+  }
+}
+
+/* ---------- sticky-offset measurement ---------- */
+function measure(){
+  const h = document.querySelector("header.app");
+  const n = document.querySelector("nav.cats");
+  const hH = h ? h.offsetHeight : 60;
+  const nH = n ? n.offsetHeight : 56;
+  document.documentElement.style.setProperty("--header-h", hH+"px");
+  const tgl = document.querySelector(".toggle"); if(tgl) tgl.style.top = (hH+nH)+"px";
+  const mp = document.querySelector("aside.map-wrap"); if(mp) mp.style.top = (hH+nH+14)+"px";
+}
+
+/* ---------- map ---------- */
+function pinIcon(color, on){
+  return L.divIcon({ className:"", iconSize:[26,26], iconAnchor:[13,24], popupAnchor:[0,-22],
+    html:'<div class="achbar-pin" style="background:'+color+';'+(on?"transform:rotate(45deg) scale(1.28);border-color:#20302E;z-index:600":"")+'"></div>' });
+}
+function initMap(){
+  if(mapInited || !window.L) return;
+  const el = document.getElementById("map");
+  if(!el) return;
+  mapInited = true;
+  map = L.map(el, { scrollWheelZoom:true, zoomControl:true }).setView([33.10,35.72], 11);
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+    { attribution:"&copy; OpenStreetMap &copy; CARTO", maxZoom:19, subdomains:"abcd" }).addTo(map);
+  setTimeout(() => { if(map) map.invalidateSize(); }, 200);
+  renderMarkers();
+}
+function renderMarkers(){
+  if(!map) return;
+  Object.values(markers).forEach(m => map.removeLayer(m));
+  markers = {};
+  const list = state.data.filter(d => matches(d) && d.lat !== "" && d.lng !== "");
+  const bounds = [];
+  list.forEach(d => {
+    const C = CATS[d.cat];
+    const m = L.marker([d.lat,d.lng], { icon: pinIcon(C.color, d === state.selected) }).addTo(map);
+    m.bindPopup('<div class="achbar-pop"><b>'+esc(d.name)+'</b><span>'+esc([d.sub,d.settlement].filter(Boolean).join(" · "))+'</span></div>');
+    m.on("click", () => selectById(d._id));
+    markers[d._id] = m; bounds.push([d.lat,d.lng]);
+  });
+  if(bounds.length) map.fitBounds(bounds, { padding:[40,40], maxZoom:13 });
+}
+
+/* ---------- live load from the sheet ---------- */
+function rowVal(row, idx){ return (idx==null || row[idx]==null) ? "" : String(row[idx]).trim(); }
+function normalizeTab(tab, rows){
+  const out = [];
+  for(let i = tab.start; i < rows.length; i++){
+    const r = rows[i]; if(!r) continue;
+    const c = tab.cols;
+    let name = rowVal(r, c.name);
+    const sub = rowVal(r, c.sub);
+    if(!name) name = sub;          /* e.g. health row with a specialty but no person name */
+    if(!name) continue;           /* skip truly empty rows */
+    out.push(decorate({ cat:tab.cat, name, sub,
+      settlement: rowVal(r, c.settlement), phone: rowVal(r, c.phone), notes: rowVal(r, c.notes) }));
+  }
+  return out;
+}
+function applyData(arr, live){
+  assignIds(arr);
+  const prev = state.selected;
+  state.data = arr;
+  state.live = !!live;
+  state.selected = prev ? (arr.find(d => d.name === prev.name && d.cat === prev.cat) || null) : null;
+  update();
+}
+function loadLive(){
+  if(!window.Papa){ setTimeout(loadLive, 200); return; }
+  let done = 0, all = [], anyOk = false;
+  TABS.forEach(tab => {
+    Papa.parse(csvUrl(tab.gid), {
+      download:true, header:false, skipEmptyLines:true,
+      complete: res => { try{ const rows = res.data||[]; if(rows.length){ anyOk = true; all = all.concat(normalizeTab(tab, rows)); } }catch(e){} finish(); },
+      error: () => finish()
+    });
+  });
+  function finish(){
+    if(++done < TABS.length) return;
+    if(anyOk && all.length){
+      try{ localStorage.setItem(CACHE_KEY, JSON.stringify(all.map(({_id,...r}) => r))); }catch(e){}
+      applyData(all, true);
+    }
+  }
+}
+
+/* ---------- boot ---------- */
+function mount(){
+  document.getElementById("app").innerHTML =
+    header() + hero() +
+    '<nav class="cats" aria-label="קטגוריות"><div class="wrap row" id="cats-row"></div></nav>'+
+    '<div class="wrap">'+
+      '<div class="toggle"><button data-view="list">רשימה</button><button data-view="map">מפה</button></div>'+
+      '<div class="grid">'+
+        '<section class="list-pane" id="list-pane" style="min-width:0">'+
+          '<div id="status"></div><p class="count-line" id="count"></p><div id="list"></div>'+
+        '</section>'+
+        '<aside class="map-wrap" id="map-pane">'+
+          '<div id="map"></div>'+
+          '<p class="cap">המיקומים על המפה משוערים ברמת היישוב. לפתיחת ניווט מדויק — לחצו «במפות גוגל» בכרטיס.</p>'+
+        '</aside>'+
+      '</div>'+
+    '</div>' + footer();
+
+  document.getElementById("search").oninput = e => { state.query = e.target.value; state.selected = null; update(); };
+  document.querySelectorAll(".toggle button").forEach(b => b.onclick = () => { state.mobileView = b.dataset.view; applyResponsive(); });
+
+  // start from cache if present, else seed; then go live
+  let initial = SEED;
+  try{ const c = JSON.parse(localStorage.getItem(CACHE_KEY)||"null"); if(Array.isArray(c) && c.length) initial = c; }catch(e){}
+  state.data = assignIds(initial.map(decorate));
+
+  measure();
+  initMap();
+  update();
+  window.addEventListener("resize", () => { measure(); applyResponsive(); });
+  loadLive();
+}
+
+if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount);
+else mount();
+</script>
+</body>
+</html>
