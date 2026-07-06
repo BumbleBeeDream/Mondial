@@ -69,3 +69,12 @@ N.Mendes ו-Vitinha בכושר רותח (זוכי CL עם PSG, J.Neves גם). Ro
 5. getfootballnewsfrance / The Daily Guardian — Vitinha 3 בכדור-הזהב 2025, פורם 25/26.
 </content>
 </invoke>
+
+---
+## 🔄 עדכון R16 (6.7.26)
+- **מסלול:** בית K → R32 **2–1 קרואטיה** (שער רונאלדו). **Ronaldo רותח: 4 שערים ב-3 משחקים.** J.Neves חזר להרכב.
+- **פציעות/השעיות:** אין. סגל מלא.
+- **XI צפוי מול ספרד (4-3-3):** D.Costa; Cancelo, R.Veiga, R.Dias, N.Mendes; Vitinha, J.Neves; P.Neto, B.Fernandes, Leão; **Ronaldo**.
+- **אינדקסים:** התקפה **88** (Ronaldo חם) · הגנה **84** (−1: ספגה לקרואטיה). מאמן ללא שינוי (cq1.07 cs+0.3).
+- **H2H רלוונטי:** גמר ליגת האומות 2025 — פורטוגל 2–2 ואז ניצחה בפנדלים. מפגש טרי, אותם מאמנים/סגלים → אינדיקציה חיה שפורטוגל לא חוששת מספרד.
+- מקורות: ESPN/Goal/RotoWire/SI/AlJazeera (5–6.7.26).

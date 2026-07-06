@@ -73,3 +73,11 @@
 3. lineups.com / WhoScored — XI מאומת מול מצרים (15.6.26)
 4. Al Jazeera / FIFA / ESPN — דו"ח משחק בלגיה 1-1 מצרים (Ashour, Hany OG)
 5. Sports Mole — פציעות/השעיות (Debast OUT) · Transfermarkt/Fotmob — שווי (Doku €69.1M, Lukaku €10.8M) · EA FC26 (De Bruyne 87, Courtois 89, Trossard 83, Tielemans 85, Lukaku 84, Doku 80, Onana 79)
+
+---
+## 🔄 עדכון R16 (6.7.26)
+- **מסלול:** R32 **3–2 סנגל אחרי הארכה** — חזרה מ-0–2 עם 7 דקות לסוף. **הגנה שבירה נחשפה שוב** (ספגה 2), אך "gamechangers" בהתקפה הכריעו.
+- **XI צפוי מול ארה"ב (4-2-3-1):** Courtois; Castagne, Mechele, Theate, De Cuyper; Tielemans, Vanaken; De Bruyne, Trossard, Doku; **Lukaku**. (Vanaken במקום Onana; Theate/De Cuyper בהגנה.)
+- **פציעות:** Debast עדיין בחוץ. שאר הסגל כשיר (De Bruyne/Doku/Lukaku/Courtois).
+- **אינדקסים ללא שינוי:** התקפה **81** · הגנה **67** (שברירית — אושר שוב מול סנגל). מאמן cq1.0 cs+0.5.
+- מקורות: ESPN/FIFA/FOX/Racing Post (5–6.7.26).

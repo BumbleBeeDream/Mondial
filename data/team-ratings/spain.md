@@ -110,3 +110,11 @@ FIFA #2 · אלופת אירופה 2024 · נבחרת ה-Tier-1 היקרה וה�
 5. EA FC 26 / Sofifa — Overall ratings; Al Jazeera — תחזית/לוז בית H
 
 *דגל 403: דפי Transfermarkt.us והדוחות הראשיים (Sky/AlJazeera/Wiki) החזירו 403; ערכי שווי הוצלבו ממקורות משניים (threads/goal/fotmob) — סטייה אפשרית ±10%.*
+
+---
+## 🔄 עדכון R16 (6.7.26)
+- **מסלול:** מנצחת בית H → R32 **3–0 אוסטריה**. **5 קלין-שיטים ברצף, 0 שערים ספוגים בטורניר** → פורם הגנתי עילית.
+- **פציעות חדשות:** **Nico Williams (מקרב/adductor) — בחוץ** (נפצע מול אורוגוואי, לא שיחק מאז) · **Yeremy Pino (כתף) — בחוץ.** Rodri/Pedri כשירים.
+- **XI צפוי מול פורטוגל (4-3-3):** Simón; Porro, Cubarsí, Laporte, Cucurella; Rodri, Pedri, D.Olmo; Baena, Oyarzabal, **Yamal**.
+- **אינדקסים מתוקנים:** התקפה **90** (−1: Nico+Pino בחוץ, Yamal חד) · הגנה **89** (+3: רצף קלין-שיט). מאמן ללא שינוי (cq1.07 cs+0.5).
+- מקורות: CBS/ESPN/RotoWire/SI/AlJazeera (5–6.7.26).
