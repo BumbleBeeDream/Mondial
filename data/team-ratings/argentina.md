@@ -64,3 +64,9 @@ cq **1.08** · cs **+0.1** (מאוזן-התקפי). בתפקיד מאז 2018; ק
 4. khelnow — "Messi, Álvarez, Martínez fit for Algeria clash"
 5. Transfermarkt — Argentina detailed squad / market values
 > דגל: WebFetch ל-ESPN/TM/Sofifa הוחזר 403; שוויי TM ו-EA FC OVR ברמת השחקן הבודד הם הערכות מבוססות-ידע מכוילות למקורות שנקראו.
+
+---
+## רענון רבע-גמר (11.7.26) — לקראת שווייץ (QF4)
+- **מסלול:** 5/5 ניצחונות, **מסי 8 שערים (נעל-זהב, מוביל בטורניר)**. אך **ניצחונות-חרדה**: 3–2 על כף ורדה (הארכה) + קאמבק 3–2 על מצרים (פיגור 0:2 עד ד'78) → **ההגנה דולפת בנוקאאוט** (ספגה 2+2).
+- **פציעות:** אין נעדרים מהותיים; Romero כשיר ויפתח; מסי כשיר (ניהול-דקות אפשרי).
+- **XI צפוי (4-3-3):** E.Martínez; Molina, Romero, Li.Martínez, Tagliafico; De Paul, E.Fernández, Mac Allister; Messi, J.Álvarez/Lautaro, Almada. אינדקסים ללא שינוי (att90/def82).

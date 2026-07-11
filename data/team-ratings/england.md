@@ -66,3 +66,10 @@ Pickford; R.James, Guéhi, Stones, O'Reilly; Rice, E.Anderson; Saka/Madueke, Bel
 3. Sports Mole / RotoWire / Oddschecker — הרכב צפוי מול קרואטיה + ספק Saka.
 4. Goal / Everton (FOX/beIN) — פציעות Branthwaite + Grealish.
 5. givemesport / Sky Sports — שווי סגל TM (Transfermarkt 403 → הערכות).
+
+---
+## רענון רבע-גמר (11.7.26) — לקראת נורווגיה (QF3)
+- **מסלול:** R16 ניצחון על מקסיקו (Tuchel פרגמטי, נמוכי-שערים). התקפה עדיין לא-משכנעת לחלוטין.
+- **בוסט-פציעות משולש:** Rice (מחלה), Guéhi (ירך), R.James (ירך) — **כולם התאמנו שישי, Tuchel אישר "everyone available"**. → הקו האחורי/ציר במיטבם.
+- **היעדרות:** Quansah מורחק (2 משחקים, אדום) — עומק בלמים בלבד; J.Henderson בחוץ לשארית הטורניר (שבר בשורש כף-יד). קנס נמוך.
+- **XI צפוי (4-2-3-1):** Pickford; R.James/Spence, Guéhi, Stones, O'Reilly; Rice, E.Anderson; Saka, Bellingham, Gordon; Kane(c). אינדקסים ללא שינוי (att87/def84).

@@ -105,3 +105,10 @@ FIFA ~#31 · סגל ~€590M (Transfermarkt) · EA FC26 בינוני-גבוה ·
 - מועדון Nusa = **RB Leipzig** (הבסיס ציין "Nusa" בלי מועדון).
 - מועדון Heggem = **Bologna**; Møller Wolfe = **Wolves** — מעדכן את "Heggem(Østigård)" ו-"RB" הגנריים בבסיס.
 - הוסף עומק מלא (26): O.Bobb (Man City), J.Strand Larsen (Wolves), T.Aasgaard (Rangers), K.Thorstvedt (Sassuolo).
+
+---
+## רענון רבע-גמר (11.7.26) — לקראת אנגליה (QF3)
+- **מסלול:** הגיעה לרבע-גמר ראשון אי-פעם. **R16: נורווגיה 2–1 ברזיל** (Haaland צמד) — הישג היסטורי. Haaland 7 שערים בטורניר.
+- **⚠️ מגפת-שפעת בסגל:** שיעול/חום/עייפות בקרב שחקנים וסגל. Strand Larsen החמיץ משחק (חום); Holmgren Pedersen נעדר מול ברזיל. → **ctx 0.97** (הורדת-כושר כללית).
+- **פציעה:** Møller Wolfe (LB) יצא פצוע בתוספת-הזמן מול ברזיל — ספק ל-QF (מחליף Bjørkan). Haaland+Ødegaard כשירים ויפתחו.
+- **XI צפוי (4-3-3):** Nyland; Ryerson, Ajer, Heggem, Møller Wolfe; P.Berg, Berge, Ødegaard(c); Sørloth, Haaland, Nusa. אינדקסים ללא שינוי (att79/def57); רק ctx-מגפה.

@@ -62,3 +62,9 @@ MD1: **קטאר 1-1 שווייץ** (13.6, Levi's Stadium / SF Bay). שליטה �
 
 ## מקורות (16.6.26)
 ESPN/Sky/FIFA/Al Jazeera match reports (Qatar 1-1 Switzerland, 13.6); olympics.com/khelnow/beIN squad list; Transfermarkt (Kobel/Ndoye €40M, Akanji €22M, Zakaria €24M, Xhaka €8M, Embolo €12M); RotoWire/allaboutfpl set-piece takers. EA FC OVR — חלק 403/הערכה (מסומן ~).
+
+---
+## רענון רבע-גמר (11.7.26) — לקראת ארגנטינה (QF4)
+- **מסלול היסטורי:** רבע-גמר ראשון מאז **1954**. **R16: 0–0 מול קולומביה → 4–3 בפנדלים** (Kobel גיבור, בלוק אטום 120'). זהות: חומת-הגנה + הכרעה מהנקודה.
+- **⚠️ התקפה מרוטשת:** **Manzambi (מלך-השערים 3ג+2ב) בחוץ — פציעת ברך באימון (Yakin: "לא סביר")** + **Aebischer בחוץ** + Jaquez (עומק בלם). → Embolo חוד-בודד ללא גיבוי אמיתי. **אינדקס התקפה 77→72** (רענון QF).
+- **הגנה 78 ללא שינוי** (Kobel/Akanji/Elvedi — הנכס). XI (4-2-3-1): Kobel; Widmer, Akanji, Elvedi, R.Rodríguez; Zakaria, Freuler; Ndoye, Xhaka, Vargas; Embolo.
